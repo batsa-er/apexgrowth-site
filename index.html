@@ -10,18 +10,16 @@
 <meta name="keywords" content="digital marketing agency Ghana, B2B marketing Africa, revenue growth agency, demand generation Africa, fintech marketing Ghana, performance marketing agency Accra, CRM automation Africa, marketing strategy Ghana">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="author" content="Apex Growth Partners">
-<!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
-<!-- TODO: Add your real Google Search Console verification meta tag here -->
-<link rel="canonical" href="https://mellifluous-zuccutto-0da7a7.netlify.app/">
+<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE">
+<link rel="canonical" href="https://apexgrowth.africa/">
 
 <!-- ── Open Graph (Facebook, LinkedIn, WhatsApp) ── -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://mellifluous-zuccutto-0da7a7.netlify.app/">
+<meta property="og:url" content="https://apexgrowth.africa/">
 <meta property="og:site_name" content="Apex Growth Partners">
 <meta property="og:title" content="Apex Growth Partners | Revenue Architecture for Africa's Leading Brands">
 <meta property="og:description" content="We build predictable revenue systems for enterprise, fintech, and high-growth companies across Africa. Strategy, demand generation, CRM automation, and performance marketing at scale.">
-<meta property="og:image" content="/og-image.jpg">
-<!-- TODO: Upload og-image.jpg to your site root (recommended 1200x630) -->
+<meta property="og:image" content="https://apexgrowth.africa/og-image.jpg">
 <meta property="og:image:secure_url" content="https://apexgrowth.africa/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -40,13 +38,11 @@
 <meta name="twitter:image:alt" content="Apex Growth Partners — Revenue Architecture for Africa">
 
 <!-- ── Favicon & App Icons ── -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2308090A'/><text y='80' x='8' font-size='82' fill='%23C8973A' font-family='Georgia,serif' font-weight='bold'>A</text></svg>">
-<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
-<!-- TODO: Upload /apple-touch-icon.png then uncomment -->
-<!-- <link rel="manifest" href="/site.webmanifest"> -->
-<!-- TODO: Upload /site.webmanifest then uncomment -->
-<meta name="theme-color" content="#08090A">
-<meta name="msapplication-TileColor" content="#08090A">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23F5F0E8'/><text y='80' x='8' font-size='82' fill='%23A0681A' font-family='Georgia,serif' font-weight='bold'>A</text></svg>">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#F5F0E8">
+<meta name="msapplication-TileColor" content="#F5F0E8">
 
 <!-- ── Geo / Regional SEO ── -->
 <meta name="geo.region" content="GH-AA">
@@ -55,25 +51,35 @@
 <meta name="ICBM" content="5.6037, -0.1870">
 <meta name="language" content="English">
 <meta name="revisit-after" content="7 days">
+<!-- ── Theme: apply before render to prevent flash ── -->
+<script>try{var t=localStorage.getItem('apex-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}</script>
+
+<!-- ── Performance: DNS prefetch + preconnect for external origins ── -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//connect.facebook.net">
+<link rel="dns-prefetch" href="//snap.licdn.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
   :root {
-    --ink: #08090A;
-    --surface: #0D0E10;
-    --panel: #111318;
-    --border: rgba(255,255,255,0.07);
-    --border-strong: rgba(255,255,255,0.14);
-    --gold: #C8973A;
-    --gold-light: #E0B865;
-    --gold-dim: rgba(200,151,58,0.15);
-    --gold-glow: rgba(200,151,58,0.06);
-    --white: #F8F6F1;
-    --white-dim: rgba(248,246,241,0.55);
-    --white-faint: rgba(248,246,241,0.2);
-    --red-accent: #C04B3A;
+    /* ── Light Theme — Clean & Bright ── */
+    --ink:          #FDFAF6;       /* near-white warm — main page background   */
+    --surface:      #F4EFE6;       /* warm cream — alternate sections          */
+    --panel:        #FFFFFF;       /* pure white — cards, modals               */
+    --border:       rgba(30,20,10,0.09);  /* warm subtle border                */
+    --border-strong:rgba(30,20,10,0.16);  /* stronger border                   */
+    --gold:         #B07820;       /* warm amber — brand accent                */
+    --gold-light:   #D49A38;       /* bright amber — hover states              */
+    --gold-dim:     rgba(176,120,32,0.10); /* gold tint fills                  */
+    --gold-glow:    rgba(176,120,32,0.06); /* subtle gold glow                 */
+    --white:        #1C1712;       /* deep warm charcoal — body text           */
+    --white-dim:    rgba(28,23,18,0.52);   /* secondary text                   */
+    --white-faint:  rgba(28,23,18,0.32);   /* tertiary / muted text            */
+    --red-accent:   #C0392B;       /* red — error states                       */
     --serif: 'Cormorant Garamond', Georgia, serif;
     --sans: 'DM Sans', system-ui, sans-serif;
     --mono: 'DM Mono', monospace;
@@ -81,7 +87,37 @@
     --pad: clamp(24px, 5vw, 80px);
   }
 
+  /* ── Dark Theme ── */
+  [data-theme="dark"] {
+    --ink:           #08090A;
+    --surface:       #0D0E10;
+    --panel:         #111318;
+    --border:        rgba(255,255,255,0.07);
+    --border-strong: rgba(255,255,255,0.14);
+    --gold:          #C8973A;
+    --gold-light:    #E0B865;
+    --gold-dim:      rgba(200,151,58,0.15);
+    --gold-glow:     rgba(200,151,58,0.06);
+    --white:         #F8F6F1;
+    --white-dim:     rgba(248,246,241,0.55);
+    --white-faint:   rgba(248,246,241,0.2);
+    --red-accent:    #C04B3A;
+  }
+
+  /*
+   * PERFORMANCE NOTES
+   * ─────────────────────────────────────────────────────────────────
+   * font-display: swap is handled via Google Fonts &display=swap param.
+   * When adding <img> tags: always add loading="lazy" and explicit
+   * width/height attrs to prevent Cumulative Layout Shift (CLS).
+   * Example: <img src="photo.jpg" alt="..." width="800" height="600" loading="lazy">
+   *
+   * For above-the-fold images (hero): use loading="eager" or fetchpriority="high".
+   * ─────────────────────────────────────────────────────────────────
+   */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  img, video, svg { max-width: 100%; height: auto; }   /* prevent media overflow on mobile */
 
   html { scroll-behavior: smooth; }
 
@@ -93,6 +129,8 @@
     line-height: 1.7;
     overflow-x: hidden;
     cursor: crosshair;
+    overflow-wrap: break-word;   /* prevent long words/URLs breaking layout */
+    word-break: break-word;      /* Safari fallback */
   }
 
   /* ── Cursor ── */
@@ -110,7 +148,7 @@
   .cursor-ring {
     position: fixed;
     width: 36px; height: 36px;
-    border: 1px solid rgba(200,151,58,0.4);
+    border: 1px solid rgba(176,120,32,0.35);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9998;
@@ -271,10 +309,11 @@
     backdrop-filter: blur(0px);
   }
   nav.scrolled {
-    background: rgba(8,9,10,0.92);
+    background: rgba(245,240,232,0.96);
     border-bottom-color: var(--border);
     backdrop-filter: blur(20px);
   }
+  [data-theme="dark"] nav.scrolled { background: rgba(8,9,10,0.96); }
 
   .nav-logo {
     font-family: var(--serif);
@@ -322,7 +361,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 120px var(--pad) 80px;
+    padding: clamp(60px, 10vw, 120px) var(--pad) 80px;
     position: relative;
     overflow: hidden;
   }
@@ -331,9 +370,9 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(200,151,58,0.07) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(200,151,58,0.04) 0%, transparent 60%),
-      linear-gradient(180deg, var(--ink) 0%, #0a0b0d 100%);
+      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(176,120,32,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(176,120,32,0.06) 0%, transparent 60%),
+      linear-gradient(180deg, var(--ink) 0%, var(--surface) 100%);
     z-index: 0;
   }
 
@@ -341,8 +380,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      linear-gradient(rgba(26,21,16,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(26,21,16,0.05) 1px, transparent 1px);
     background-size: 80px 80px;
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 80%);
     z-index: 0;
@@ -357,7 +396,7 @@
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    border: 1px solid rgba(200,151,58,0.08);
+    border: 1px solid rgba(176,120,32,0.09);
     z-index: 0;
   }
   .hero-orb::before {
@@ -365,14 +404,14 @@
     position: absolute;
     inset: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(200,151,58,0.06);
+    border: 1px solid rgba(176,120,32,0.08);
   }
   .hero-orb::after {
     content: '';
     position: absolute;
     inset: 100px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(200,151,58,0.04) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(176,120,32,0.06) 0%, transparent 70%);
     animation: pulse 4s ease-in-out infinite;
   }
 
@@ -424,14 +463,15 @@
     animation: fadeUp 1s ease 0.6s both;
   }
 
+  /* ── TRUSTED-BY MARQUEE ────────────────────────────────── */
   .trust-strip {
     border-top: 1px solid var(--border);
     padding-top: 40px;
     display: flex;
     align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 32px;
     animation: fadeIn 1s ease 0.8s both;
+    overflow: hidden;
   }
   .trust-label {
     font-family: var(--mono);
@@ -440,12 +480,37 @@
     text-transform: uppercase;
     color: var(--white-faint);
     white-space: nowrap;
+    flex-shrink: 0;
   }
+  /* Scroll track — clips overflow, fades edges */
   .trust-logos {
+    flex: 1;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+      to right, transparent 0%, black 10%, black 90%, transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right, transparent 0%, black 10%, black 90%, transparent 100%
+    );
+  }
+  /* Inner belt — two identical sets end-to-end for seamless loop */
+  .trust-track {
     display: flex;
     align-items: center;
-    gap: 36px;
-    flex-wrap: wrap;
+    width: max-content;
+    animation: marquee 26s linear infinite;
+  }
+  /* Pause on hover so users can read */
+  .trust-logos:hover .trust-track {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .trust-set {
+    display: flex;
+    align-items: center;
   }
   .trust-logo {
     font-family: var(--serif);
@@ -455,8 +520,25 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     transition: color 0.3s;
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0 28px;
   }
-  .trust-logo:hover { color: var(--gold-light); }
+  .trust-logo:hover { color: var(--gold-light); cursor: default; }
+  /* Dot separator between logos */
+  .trust-sep {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--border-strong);
+    flex-shrink: 0;
+  }
+  /* Accessibility — no spinning for users who prefer less motion */
+  @media (prefers-reduced-motion: reduce) {
+    .trust-track { animation: none; }
+    .trust-logos { -webkit-mask-image: none; mask-image: none; }
+    .trust-set + .trust-set { display: none; }
+  }
 
   /* Hero stat strip */
   .hero-stats {
@@ -542,7 +624,8 @@
      PROBLEM SECTION
   ═══════════════════════════════════════════ */
   #problem {
-    padding: 120px var(--pad);
+    background: var(--ink);
+    padding: clamp(60px, 10vw, 120px) var(--pad);
     position: relative;
     overflow: hidden;
   }
@@ -647,7 +730,7 @@
      AUTHORITY SECTION
   ═══════════════════════════════════════════ */
   #authority {
-    padding: 120px var(--pad);
+    padding: clamp(60px, 10vw, 120px) var(--pad);
     background: var(--panel);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -661,7 +744,7 @@
     top: -200px; left: 50%;
     transform: translateX(-50%);
     width: 800px; height: 400px;
-    background: radial-gradient(ellipse, rgba(200,151,58,0.05) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(176,120,32,0.07) 0%, transparent 70%);
     pointer-events: none;
   }
 
@@ -696,7 +779,8 @@
     gap: 2px;
   }
   .diff-card {
-    background: var(--ink);
+    background: var(--surface);
+    box-shadow: 0 1px 8px rgba(26,21,16,0.04);
     padding: 48px 40px;
     border: 1px solid var(--border);
     position: relative;
@@ -754,7 +838,8 @@
      SERVICES
   ═══════════════════════════════════════════ */
   #services {
-    padding: 120px var(--pad);
+    background: var(--ink);
+    padding: clamp(60px, 10vw, 120px) var(--pad);
     position: relative;
   }
 
@@ -791,7 +876,8 @@
     background: var(--panel);
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease, border-color 0.3s;
+    box-shadow: 0 2px 16px rgba(26,21,16,0.05);
+    transition: transform 0.3s ease, border-color 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
   }
@@ -801,7 +887,7 @@
     font-family: var(--serif);
     font-size: 120px;
     font-weight: 600;
-    color: rgba(200,151,58,0.06);
+    color: rgba(176,120,32,0.08);
     line-height: 1;
     position: absolute;
     top: -10px;
@@ -809,7 +895,7 @@
     pointer-events: none;
     transition: color 0.3s;
   }
-  .pillar:hover .pillar-number { color: rgba(200,151,58,0.1); }
+  .pillar:hover .pillar-number { color: rgba(176,120,32,0.12); }
 
   .pillar-content { padding: 48px 40px; flex: 1; }
 
@@ -876,7 +962,7 @@
      CASE STUDIES
   ═══════════════════════════════════════════ */
   #cases {
-    padding: 120px var(--pad);
+    padding: clamp(60px, 10vw, 120px) var(--pad);
     background: var(--panel);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -907,12 +993,13 @@
   }
 
   .case-card {
-    background: var(--ink);
+    background: var(--panel);
     border: 1px solid var(--border);
     overflow: hidden;
-    transition: border-color 0.3s;
+    box-shadow: 0 2px 12px rgba(26,21,16,0.06);
+    transition: border-color 0.3s, box-shadow 0.3s;
   }
-  .case-card:hover { border-color: var(--gold); }
+  .case-card:hover { border-color: var(--gold); box-shadow: 0 8px 32px rgba(26,21,16,0.10); }
 
   .case-header {
     padding: 32px 48px;
@@ -997,7 +1084,8 @@
      PROCESS SECTION
   ═══════════════════════════════════════════ */
   #process {
-    padding: 120px var(--pad);
+    background: var(--ink);
+    padding: clamp(60px, 10vw, 120px) var(--pad);
     position: relative;
     overflow: hidden;
   }
@@ -1055,7 +1143,7 @@
   .step-num {
     width: 56px; height: 56px;
     border: 1px solid var(--gold);
-    background: var(--ink);
+    background: var(--panel);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1108,7 +1196,7 @@
      TESTIMONIALS
   ═══════════════════════════════════════════ */
   #testimonials {
-    padding: 120px var(--pad);
+    padding: clamp(60px, 10vw, 120px) var(--pad);
     background: var(--panel);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -1137,7 +1225,7 @@
   }
 
   .testi-featured {
-    background: linear-gradient(135deg, var(--ink) 0%, rgba(200,151,58,0.04) 100%);
+    background: linear-gradient(135deg, var(--ink) 0%, rgba(176,120,32,0.06) 100%);
     border: 1px solid var(--gold);
     padding: 56px;
   }
@@ -1197,9 +1285,10 @@
     gap: 24px;
   }
   .testi-card {
-    background: var(--ink);
+    background: var(--surface);
     border: 1px solid var(--border);
     padding: 32px;
+    box-shadow: 0 1px 8px rgba(26,21,16,0.04);
     transition: border-color 0.3s;
   }
   .testi-card:hover { border-color: var(--gold); }
@@ -1235,7 +1324,8 @@
      THOUGHT LEADERSHIP
   ═══════════════════════════════════════════ */
   #insights {
-    padding: 120px var(--pad);
+    background: var(--ink);
+    padding: clamp(60px, 10vw, 120px) var(--pad);
     position: relative;
   }
 
@@ -1267,14 +1357,15 @@
     background: var(--panel);
     border: 1px solid var(--border);
     overflow: hidden;
-    transition: transform 0.3s, border-color 0.3s;
+    box-shadow: 0 2px 12px rgba(26,21,16,0.05);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
     cursor: pointer;
   }
   .insight-card:hover { transform: translateY(-4px); border-color: var(--gold); }
 
   .insight-image {
     height: 200px;
-    background: linear-gradient(135deg, #1a1b1f 0%, #111318 100%);
+    background: linear-gradient(135deg, #F0EBE0 0%, #E8E0D2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1287,13 +1378,13 @@
     opacity: 0.3;
   }
   .insight-card:nth-child(1) .insight-image {
-    background: linear-gradient(135deg, #0f1a2a 0%, #0d1520 100%);
+    background: linear-gradient(135deg, #E8F0F6 0%, #D8E6F0 100%);
   }
   .insight-card:nth-child(2) .insight-image {
-    background: linear-gradient(135deg, #1a1000 0%, #110d00 100%);
+    background: linear-gradient(135deg, #F5EDD8 0%, #EDE0C0 100%);
   }
   .insight-card:nth-child(3) .insight-image {
-    background: linear-gradient(135deg, #1a0f0a 0%, #110a08 100%);
+    background: linear-gradient(135deg, #F5E4DF 0%, #EDD4CE 100%);
   }
 
   .insight-image-label {
@@ -1353,7 +1444,7 @@
      FINAL CTA
   ═══════════════════════════════════════════ */
   #cta {
-    padding: 160px var(--pad);
+    padding: clamp(80px, 12vw, 160px) var(--pad);
     position: relative;
     overflow: hidden;
     background: var(--panel);
@@ -1365,8 +1456,8 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 60% 80% at 50% 100%, rgba(200,151,58,0.08) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 50%, rgba(200,151,58,0.04) 0%, transparent 60%);
+      radial-gradient(ellipse 60% 80% at 50% 100%, rgba(176,120,32,0.09) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 50%, rgba(176,120,32,0.06) 0%, transparent 60%);
     pointer-events: none;
   }
 
@@ -1426,7 +1517,7 @@
      FOOTER
   ═══════════════════════════════════════════ */
   footer {
-    background: var(--ink);
+    background: var(--surface);
     border-top: 1px solid var(--border);
     padding: 72px var(--pad) 48px;
     position: relative;
@@ -1514,11 +1605,12 @@
     font-size: 11px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--white-faint);
-    transition: color 0.2s;
+    color: var(--white-dim);
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 6px;
+    transition: color 0.2s;
   }
   .footer-socials a:hover { color: var(--gold); }
   .footer-socials svg { flex-shrink: 0; }
@@ -1563,17 +1655,23 @@
   .skip-link:focus{top:16px;}
   :focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
   @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}.reveal{opacity:1;transform:none;transition:none;}.cursor,.cursor-ring{display:none;}body{cursor:auto;}}
-  .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:10px 8px;min-height:44px;min-width:44px;}
   .nav-hamburger span{display:block;width:24px;height:1.5px;background:var(--white);transition:all .3s;}
   .nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
   .nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
   .nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
-  .nav-mobile-menu{display:none;position:fixed;inset:0;background:rgba(8,9,10,.97);backdrop-filter:blur(20px);z-index:150;flex-direction:column;align-items:center;justify-content:center;}
+  .nav-mobile-menu{display:none;position:fixed;inset:0;background:rgba(245,240,232,0.98);backdrop-filter:blur(20px);z-index:150;flex-direction:column;align-items:center;justify-content:center;}
+  [data-theme="dark"] .nav-mobile-menu{background:rgba(13,14,16,0.98);}
   .nav-mobile-menu.open{display:flex;}
   .nav-mobile-menu a{font-family:var(--serif);font-size:clamp(28px,6vw,48px);font-weight:600;color:var(--white);padding:20px 40px;border-bottom:1px solid var(--border);width:100%;text-align:center;transition:color .2s;}
   .nav-mobile-menu a:hover{color:var(--gold);}
   .nav-mobile-menu .mobile-cta{margin-top:32px;background:var(--gold);color:#08090A!important;font-family:var(--mono);font-size:13px!important;letter-spacing:.12em;text-transform:uppercase;padding:18px 48px!important;border-bottom:none!important;width:auto!important;font-weight:500;}
   @media(max-width:768px){.nav-hamburger{display:flex;}}
+
+  /* ── Theme Toggle ── */
+  .theme-toggle{background:none;border:1px solid var(--border-strong);color:var(--white-dim);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;transition:border-color .2s,color .2s;flex-shrink:0;line-height:1;}
+  .theme-toggle:hover{border-color:var(--gold);color:var(--gold);}
+
   .footer-top,.footer-bottom{max-width:var(--max);margin-left:auto;margin-right:auto;}
   @media(max-width:600px){.cta-inner{padding:0 var(--pad);}#cta{padding:100px var(--pad);}}
 
@@ -1583,12 +1681,14 @@
   .modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(4,5,6,0.92);
+    background: rgba(26,21,16,0.72);
     backdrop-filter: blur(12px);
     z-index: 1000;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    overflow-y: auto;
+    padding: 20px 0;
     padding: 24px;
     opacity: 0;
     pointer-events: none;
@@ -1661,7 +1761,7 @@
     position: absolute;
     top: 24px;
     right: 24px;
-    width: 40px; height: 40px;
+    width: 44px; height: 44px;
     background: none;
     border: 1px solid var(--border);
     color: var(--white-dim);
@@ -1706,7 +1806,7 @@
   .form-input,
   .form-select,
   .form-textarea {
-    background: rgba(255,255,255,0.04);
+    background: #FDFAF6;
     border: 1px solid var(--border-strong);
     color: var(--white);
     font-family: var(--sans);
@@ -1722,7 +1822,7 @@
   .form-select:focus,
   .form-textarea:focus {
     border-color: var(--gold);
-    background: rgba(200,151,58,0.04);
+    background: rgba(176,120,32,0.06);
   }
   .form-input::placeholder,
   .form-textarea::placeholder { color: var(--white-faint); }
@@ -1737,7 +1837,7 @@
     padding-right: 36px;
     cursor: pointer;
   }
-  .form-select option { background: #1a1b1f; color: var(--white); }
+  .form-select option { background: #FFFFFF; color: var(--white); }
 
   .form-textarea { resize: vertical; min-height: 100px; }
 
@@ -1769,7 +1869,7 @@
     align-items: center;
     gap: 8px;
     padding: 10px 16px;
-    background: rgba(255,255,255,0.03);
+    background: #FDFAF6;
     border: 1px solid var(--border);
     font-family: var(--mono);
     font-size: 10px;
@@ -1794,7 +1894,8 @@
     margin-top: 8px;
   }
   .time-slot {
-    padding: 10px 8px;
+    padding: 13px 10px;
+    min-height: 44px;
     border: 1px solid var(--border);
     background: transparent;
     color: var(--white-dim);
@@ -1858,8 +1959,8 @@
   /* Spinner */
   .spinner {
     width: 16px; height: 16px;
-    border: 2px solid rgba(8,9,10,0.3);
-    border-top-color: #08090A;
+    border: 2px solid rgba(26,21,16,0.2);
+    border-top-color: var(--gold);
     border-radius: 50%;
     animation: spin 0.7s linear infinite;
     display: none;
@@ -1928,8 +2029,8 @@
   .detail-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(4,5,6,0.95);
-    backdrop-filter: blur(16px);
+    background: rgba(26,21,16,0.75);
+    backdrop-filter: blur(20px);
     z-index: 1000;
     display: flex;
     align-items: flex-start;
@@ -1949,6 +2050,8 @@
     border: 1px solid var(--border-strong);
     width: 100%;
     max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
     position: relative;
     transform: translateY(32px);
     transition: transform 0.4s ease;
@@ -2115,7 +2218,7 @@
   .detail-cta-strip {
     padding: 36px 56px;
     border-top: 1px solid var(--border);
-    background: rgba(200,151,58,0.03);
+    background: rgba(176,120,32,0.05);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2251,61 +2354,344 @@
     .case-card-cta { padding-left: 24px; padding-right: 24px; }
   }
 
+
+  /* ═══════════════════════════════════════════════════════
+     GOOGLE SHEETS CMS — SKELETON LOADING STATES
+  ═══════════════════════════════════════════════════════ */
+  @keyframes shimmer {
+    0%   { background-position: -600px 0; }
+    100% { background-position:  600px 0; }
+  }
+  .cms-skeleton {
+    pointer-events: none;
+    animation: shimmer 1.6s infinite linear;
+    background: linear-gradient(90deg,
+      var(--surface) 25%,
+      var(--panel)   50%,
+      var(--surface) 75%
+    );
+    background-size: 600px 100%;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .skel-line {
+    height: 14px;
+    border-radius: 4px;
+    background: rgba(28,23,18,0.10);
+    margin-bottom: 10px;
+  }
+  .skel-line.w40 { width: 40%; }
+  .skel-line.w50 { width: 50%; }
+  .skel-line.w60 { width: 60%; }
+  .skel-line.w70 { width: 70%; }
+  .skel-line.w80 { width: 80%; }
+  .skel-line.w90 { width: 90%; }
+
+  /* CMS error / empty states */
+  .cms-error, .cms-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--white-dim);
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    border: 1px dashed var(--border-strong);
+  }
+  .cms-error a { color: var(--gold); text-decoration: underline; }
+
+  /* CMS config banner (admin only — hidden in prod) */
+  #cmsConfigBanner {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--gold);
+    color: #1C1712;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 12px 20px;
+    z-index: 9000;
+    max-width: 320px;
+    line-height: 1.6;
+    box-shadow: 0 4px 24px rgba(28,23,18,0.15);
+  }
+  #cmsConfigBanner.visible { display: block; }
+  #cmsConfigBanner a { color: inherit; font-weight: 600; }
+
+
+  /* ═══════════════════════════════════════════════════════
+     CAREERS SECTION
+  ═══════════════════════════════════════════════════════ */
+  #careers {
+    padding: clamp(60px, 10vw, 120px) var(--pad);
+    background: var(--ink);
+    border-top: 1px solid var(--border);
+    position: relative;
+  }
+
+  .careers-header {
+    max-width: var(--max);
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .careers-headline {
+    font-family: var(--serif);
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .careers-sub {
+    font-size: 16px;
+    color: var(--white-dim);
+    max-width: 340px;
+    line-height: 1.7;
+  }
+
+  .careers-grid {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .job-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 32px 40px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 32px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    box-shadow: 0 1px 6px rgba(28,23,18,0.04);
+    cursor: default;
+  }
+  .job-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 4px 20px rgba(28,23,18,0.08);
+  }
+
+  .job-left { display: flex; flex-direction: column; gap: 10px; }
+
+  .job-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .job-dept {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .job-type {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--white-faint);
+    border: 1px solid var(--border-strong);
+    padding: 3px 10px;
+  }
+  .job-location {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--white-faint);
+  }
+
+  .job-title {
+    font-family: var(--serif);
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.3;
+  }
+  .job-excerpt {
+    font-size: 14px;
+    color: var(--white-dim);
+    line-height: 1.65;
+    max-width: 640px;
+  }
+
+  .job-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+  .job-cta:hover { gap: 16px; }
+  .job-cta-arrow { transition: transform 0.2s; }
+  .job-card:hover .job-cta-arrow { transform: translateX(4px); }
+
+  /* No openings state */
+  .careers-empty {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 64px 48px;
+    border: 1px dashed var(--border-strong);
+    text-align: center;
+  }
+  .careers-empty h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+  .careers-empty p {
+    font-size: 15px;
+    color: var(--white-dim);
+    max-width: 440px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .job-card {
+      grid-template-columns: 1fr;
+      padding: 24px;
+      gap: 20px;
+    }
+    .careers-header { margin-bottom: 48px; }
+  }
+  @media (max-width: 500px) {
+    .job-card { padding: 20px; }
+  }
+
+section[id]{scroll-margin-top:96px;}
 </style>
 <!-- ── Structured Data / Schema.org ── -->
+<!-- ═══════════════════════════════════════════════════════════════
+     STRUCTURED DATA (SCHEMA.ORG JSON-LD)
+     Includes: Organization, LocalBusiness, ProfessionalService,
+               WebSite, WebPage, FAQPage schemas in a single @graph.
+     Validate at: https://search.google.com/test/rich-results
+     Replace +233-000-000-000 and strategy@apexgrowth.africa before go-live.
+     ═══════════════════════════════════════════════════════════════ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
-      "@type": "MarketingAgency",
+      "@type": ["Organization", "ProfessionalService", "LocalBusiness", "MarketingAgency"],
       "@id": "https://apexgrowth.africa/#organization",
       "name": "Apex Growth Partners",
-      "alternateName": "Apex Growth",
-      "description": "Revenue architecture agency for enterprise, fintech, and high-growth companies across Africa and globally. We build predictable revenue systems through strategy, demand generation, and marketing automation.",
+      "alternateName": ["Apex Growth", "Apex Growth Africa"],
+      "legalName": "Apex Growth Partners",
+      "description": "Revenue architecture agency for enterprise, fintech, and high-growth companies across Africa and globally. We build predictable revenue systems through strategy, demand generation, CRM automation, and performance marketing.",
       "url": "https://apexgrowth.africa",
       "logo": {
         "@type": "ImageObject",
+        "@id": "https://apexgrowth.africa/#logo",
         "url": "https://apexgrowth.africa/logo.png",
+        "contentUrl": "https://apexgrowth.africa/logo.png",
+        "caption": "Apex Growth Partners",
         "width": 400,
         "height": 100
       },
-      "image": "https://apexgrowth.africa/og-image.jpg",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://apexgrowth.africa/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      },
       "telephone": "+233-000-000-000",
       "email": "strategy@apexgrowth.africa",
       "foundingDate": "2023",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 5,
+        "maxValue": 20
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "The Ridge",
         "addressLocality": "Accra",
+        "addressRegion": "Greater Accra",
         "addressCountry": "GH",
-        "addressRegion": "Greater Accra"
+        "postalCode": "GA-000"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 5.6037,
-        "longitude": -0.1870
+        "latitude": "5.6037",
+        "longitude": "-0.1870"
       },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
       "areaServed": [
-        {"@type": "Country", "name": "Ghana"},
-        {"@type": "Country", "name": "Nigeria"},
-        {"@type": "Country", "name": "Kenya"},
-        {"@type": "Country", "name": "United Kingdom"},
-        {"@type": "Country", "name": "United States"}
+        { "@type": "Country", "name": "Ghana",          "sameAs": "https://www.wikidata.org/wiki/Q117" },
+        { "@type": "Country", "name": "Nigeria",        "sameAs": "https://www.wikidata.org/wiki/Q1033" },
+        { "@type": "Country", "name": "Kenya",          "sameAs": "https://www.wikidata.org/wiki/Q114" },
+        { "@type": "Country", "name": "United Kingdom", "sameAs": "https://www.wikidata.org/wiki/Q145" },
+        { "@type": "Country", "name": "United States",  "sameAs": "https://www.wikidata.org/wiki/Q30" }
       ],
-      "serviceType": [
-        "Revenue Strategy",
-        "Demand Generation",
-        "Performance Marketing",
-        "Marketing Automation",
-        "CRM Implementation",
-        "Sales Enablement",
-        "SEO",
-        "Paid Advertising"
-      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "B2B Marketing and Revenue Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Revenue Strategy and Market Positioning",
+              "description": "Commercial audit, ICP definition, go-to-market strategy, and competitive positioning for B2B companies."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Demand Generation and Performance Marketing",
+              "description": "Account-based marketing, LinkedIn demand engine, Google Ads, Meta Ads, and paid media management."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "CRM Automation and Sales Enablement",
+              "description": "HubSpot implementation, marketing automation, lead scoring, pipeline management, and sales enablement."
+            }
+          }
+        ]
+      },
       "priceRange": "$$$",
       "currenciesAccepted": "GHS, USD, GBP",
       "paymentAccepted": "Bank Transfer, Mobile Money",
+      "knowsAbout": [
+        "B2B Marketing", "Revenue Operations", "Demand Generation",
+        "Marketing Automation", "CRM", "HubSpot", "SEO", "Paid Media",
+        "Account-Based Marketing", "Sales Enablement", "African Markets",
+        "Fintech Marketing", "Real Estate Marketing"
+      ],
       "sameAs": [
         "https://www.linkedin.com/company/apex-growth-partners",
         "https://twitter.com/apexgrowth_af",
@@ -2314,27 +2700,36 @@
         "https://www.youtube.com/@apexgrowthpartners"
       ]
     },
+
     {
       "@type": "WebSite",
       "@id": "https://apexgrowth.africa/#website",
       "url": "https://apexgrowth.africa",
       "name": "Apex Growth Partners",
       "description": "Revenue architecture for Africa's leading brands",
-      "publisher": {"@id": "https://apexgrowth.africa/#organization"},
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "https://apexgrowth.africa/#organization" },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://apexgrowth.africa/search?q={search_term_string}",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://apexgrowth.africa/search?q={search_term_string}"
+        },
         "query-input": "required name=search_term_string"
       }
     },
+
     {
       "@type": "WebPage",
       "@id": "https://apexgrowth.africa/#webpage",
       "url": "https://apexgrowth.africa",
       "name": "Apex Growth Partners | Revenue Architecture for Africa's Leading Brands",
       "description": "We build predictable revenue systems for enterprise, fintech, and high-growth companies across Africa and globally.",
-      "isPartOf": {"@id": "https://apexgrowth.africa/#website"},
-      "about": {"@id": "https://apexgrowth.africa/#organization"},
+      "inLanguage": "en-GB",
+      "isPartOf": { "@id": "https://apexgrowth.africa/#website" },
+      "about": { "@id": "https://apexgrowth.africa/#organization" },
+      "datePublished": "2023-01-01",
+      "dateModified": "2025-03-01",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [{
@@ -2345,15 +2740,17 @@
         }]
       }
     },
+
     {
       "@type": "FAQPage",
+      "@id": "https://apexgrowth.africa/#faq",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What does Apex Growth Partners do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Apex Growth Partners is a B2B revenue architecture agency. We build predictable revenue systems for enterprise, fintech, and high-growth companies across Africa and globally through strategy, demand generation, paid media, CRM automation, and sales enablement."
+            "text": "Apex Growth Partners is a B2B revenue architecture agency based in Accra, Ghana. We build predictable revenue systems for enterprise, fintech, and high-growth companies across Africa and globally through revenue strategy, demand generation, paid media, CRM automation, and sales enablement."
           }
         },
         {
@@ -2361,7 +2758,7 @@
           "name": "Where is Apex Growth Partners based?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We are based in Accra, Ghana and serve clients across Africa including Nigeria, Kenya, Côte d\'Ivoire, and internationally in the UK and USA."
+            "text": "We are based in Accra, Ghana (The Ridge) and serve clients across Africa including Nigeria, Kenya, and internationally in the UK and USA."
           }
         },
         {
@@ -2369,7 +2766,7 @@
           "name": "How much does Apex Growth Partners charge?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our retainer engagements start from $3,000 per month. We offer three service pillars: Revenue Strategy from $3,000/month, Demand Generation from $4,500/month, and CRM Automation from $3,500/month. High-ticket transformation programmes start from $8,500."
+            "text": "Our retainer engagements start from $3,000 per month. Revenue Strategy starts from $3,000/month, Demand Generation from $4,500/month, and CRM Automation from $3,500/month. Transformation programmes start from $8,500."
           }
         },
         {
@@ -2377,186 +2774,241 @@
           "name": "How do I book a strategy call?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can book a free 45-minute Revenue Strategy Call directly on our website. A senior Apex Growth strategist will review your commercial setup and outline a growth architecture for your business."
+            "text": "Click the Book Strategy Call button on our website. A senior Apex Growth strategist will confirm your session within 4 business hours and send a pre-call questionnaire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which industries does Apex Growth Partners specialise in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialise in B2B fintech, real estate, private healthcare, telecoms, and professional services across Africa. We have delivered results for Series B fintech companies, premium property developers, and multi-location healthcare groups."
           }
         }
       ]
     }
+
   ]
 }
 </script>
 
+<!-- ═══════════════════════════════════════════════════════════════
+     ANALYTICS & TRACKING
+     ─────────────────────────────────────────────────────────────
+     HOW TO ACTIVATE:
+     1. Replace GA_MEASUREMENT_ID  → your GA4 ID (e.g. G-ABC123XYZ)
+     2. Replace META_PIXEL_ID      → your Meta Pixel ID (16-digit number)
+     3. Replace LINKEDIN_PARTNER_ID → your LinkedIn Partner ID (7-digit number)
+     4. Remove the consent-gate comments once your cookie banner is wired up
+     ─────────────────────────────────────────────────────────────
+     GDPR / CONSENT NOTES:
+     All three scripts are wrapped in window.__consentGranted() guard.
+     Call window.grantConsent() from your cookie banner "Accept" button.
+     If you operate only in Ghana (not EU), you may remove the guard and
+     call initAnalytics() directly after the DOMContentLoaded event.
+     ═══════════════════════════════════════════════════════════════ -->
 
-<!-- ── Structured Data: Organization / LocalBusiness / Website / Service ── -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://apexgrowth.africa/#org",
-      "name": "Apex Growth Partners",
-      "url": "https://apexgrowth.africa/",
-      "logo": "https://apexgrowth.africa/logo.png",
-      "description": "We build predictable revenue systems for enterprise, fintech, and high-growth companies across Africa and globally. Strategy, demand generation, and automation at scale.",
-      "sameAs": [
-        "https://www.linkedin.com/company/apexgrowthpartners",
-        "https://www.facebook.com/apexgrowthpartners",
-        "https://x.com/apexgrowth_af"
-      ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://apexgrowth.africa/#localbusiness",
-      "name": "Apex Growth Partners",
-      "image": "https://apexgrowth.africa/og-image.jpg",
-      "url": "https://apexgrowth.africa/",
-      "telephone": "+233240000000",
-      "email": "hello@apexgrowth.africa",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Accra",
-        "addressRegion": "Greater Accra",
-        "addressCountry": "GH"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 5.6037,
-        "longitude": -0.187
-      },
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "Ghana"
-        },
-        {
-          "@type": "Continent",
-          "name": "Africa"
-        }
-      ],
-      "priceRange": "$$$"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://apexgrowth.africa/#website",
-      "url": "https://apexgrowth.africa/",
-      "name": "Apex Growth Partners",
-      "publisher": {
-        "@id": "https://apexgrowth.africa/#org"
-      }
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://apexgrowth.africa/#service",
-      "name": "B2B Growth & Revenue Architecture",
-      "provider": {
-        "@id": "https://apexgrowth.africa/#org"
-      },
-      "serviceType": [
-        "Revenue strategy",
-        "Demand generation",
-        "CRM & marketing automation",
-        "Performance marketing"
-      ],
-      "areaServed": [
-        {
-          "@type": "Continent",
-          "name": "Africa"
-        },
-        {
-          "@type": "Country",
-          "name": "Ghana"
-        }
-      ]
-    }
-  ]
-}
-</script>
-<!-- ════════════════════════════════════════
-     ANALYTICS & TRACKING (Production-ready)
-     Replace placeholder IDs with real ones
-     NOTE: Add consent gating if required (GDPR / ePrivacy)
-     ════════════════════════════════════════ -->
-
-<!-- OPTIONAL: Google Tag Manager (use this INSTEAD of GA4 below if you prefer GTM) -->
-<!--
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
--->
-
-<!-- Google Analytics 4 (if NOT using GTM) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<!-- ── Google Analytics 4 ─────────────────────────────────────────── -->
+<!-- Loads asynchronously — does NOT block page render -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
 <script>
+  /* ── GA4 consent-aware initialisation ── */
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX', {
-    page_title: document.title,
-    page_location: window.location.href,
-    send_page_view: true
+  function gtag(){ dataLayer.push(arguments); }
+
+  /* Default to consent denied (GDPR-safe) */
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage:        'denied',
+    wait_for_update:   500
   });
+
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID', {
+    /* Anonymise IPs before storing — good practice globally */
+    anonymize_ip:       true,
+    /* Disable automatic page_view until consent is granted */
+    send_page_view:     false,
+    page_title:         document.title,
+    page_location:      window.location.href
+  });
+
+  /*
+   * CONSENT GATE
+   * ─────────────
+   * Call window.grantConsent() from your cookie banner's "Accept" button.
+   * This upgrades GA4 consent and fires the deferred PageView.
+   *
+   * Example cookie banner integration:
+   *   document.getElementById('YOUR_COOKIE_ACCEPT_BTN_ID').addEventListener('click', function() {
+   *     window.grantConsent();
+   *   });
+   */
+  window.grantConsent = function() {
+    gtag('consent', 'update', {
+      analytics_storage: 'granted',
+      ad_storage:        'granted'
+    });
+    gtag('event', 'page_view');   /* fire the PageView we deferred */
+    initMetaPixel();              /* activate Meta Pixel on consent */
+    initLinkedInInsight();        /* activate LinkedIn Insight on consent */
+  };
 </script>
 
-<!-- Meta / Facebook Pixel -->
+<!-- ── Meta / Facebook Pixel ─────────────────────────────────────── -->
+<!-- Loaded on-demand after consent — does NOT fire on page load -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window,document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'META_PIXEL_ID');
-  fbq('track', 'PageView');
+  /*
+   * Meta Pixel — loaded only after user grants consent.
+   * Replace META_PIXEL_ID with your 16-digit Pixel ID.
+   * Found in: Meta Business Suite → Events Manager → Pixel → Settings
+   */
+  function initMetaPixel() {
+    if (window.__metaPixelLoaded) return;
+    window.__metaPixelLoaded = true;
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;
+      n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+      t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'META_PIXEL_ID');
+    fbq('track', 'PageView');
+  }
 </script>
-<noscript>
-  <img height="1" width="1" style="display:none" alt=""
-    src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"/>
-</noscript>
 
-<!-- LinkedIn Insight Tag -->
-<script type="text/javascript">
-  _linkedin_partner_id = "LINKEDIN_PARTNER_ID";
-  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+<!-- ── LinkedIn Insight Tag ──────────────────────────────────────── -->
+<!-- Loaded on-demand after consent — enables LinkedIn conversion tracking -->
+<script>
+  /*
+   * LinkedIn Insight Tag — loaded only after user grants consent.
+   * Replace LINKEDIN_PARTNER_ID with your 7-digit Partner ID.
+   * Found in: LinkedIn Campaign Manager → Account Assets → Insight Tag
+   */
+  function initLinkedInInsight() {
+    if (window.__linkedInLoaded) return;
+    window.__linkedInLoaded = true;
+    window._linkedin_partner_id = 'LINKEDIN_PARTNER_ID';
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(window._linkedin_partner_id);
+    (function(l){
+      if(!l){ window.lintrk = function(a,b){ window.lintrk.q.push([a,b]) }; window.lintrk.q=[]; }
+      var s = document.getElementsByTagName('script')[0];
+      var b = document.createElement('script');
+      b.type  = 'text/javascript';
+      b.async = true;
+      b.src   = 'https://snap.licdn.com/li.lms-analytics/insight.min.js';
+      s.parentNode.insertBefore(b, s);
+    })(window.lintrk);
+  }
 </script>
-<script type="text/javascript">
-  (function(l) {
-    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-    window.lintrk.q=[]}
-    var s = document.getElementsByTagName("script")[0];
-    var b = document.createElement("script");
-    b.type = "text/javascript";b.async = true;
-    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-    s.parentNode.insertBefore(b, s);})(window.lintrk);
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none" alt=""
-    src="https://px.ads.linkedin.com/collect/?pid=LINKEDIN_PARTNER_ID&fmt=gif" />
-</noscript>
 
-<!-- ── Server Security Headers (configure at hosting / CDN level) ──
-Recommended:
-- Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-- X-Content-Type-Options: nosniff
-- X-Frame-Options: DENY
-- Referrer-Policy: strict-origin-when-cross-origin
-- Permissions-Policy: geolocation=(), microphone=(), camera=()
-- Content-Security-Policy (start strict, then relax as needed):
-  default-src 'self';
-  img-src 'self' data: https://www.facebook.com https://px.ads.linkedin.com;
-  script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://snap.licdn.com;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-  font-src 'self' https://fonts.gstatic.com data:;
-  connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com;
--->
+<!-- ── Preload critical font (improves LCP score) ────────────────── -->
+<link rel="preload"
+      href="https://fonts.gstatic.com/s/cormorantgaramond/v22/co3YmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2"
+      as="font" type="font/woff2" crossorigin>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PERFORMANCE RECOMMENDATIONS FOR SERVER / CDN CONFIGURATION
+     ───────────────────────────────────────────────────────────────
+     Add these response headers in your Netlify/Vercel config file.
+
+     NETLIFY (netlify.toml):
+     ─────────────────────────────────────────────────────────────
+     [[headers]]
+       for = "/*"
+       [headers.values]
+         Cache-Control = "public, max-age=31536000, immutable"
+
+     [[headers]]
+       for = "/*.html"
+       [headers.values]
+         Cache-Control = "public, max-age=0, must-revalidate"
+
+     GZIP / BROTLI COMPRESSION:
+     ─────────────────────────────────────────────────────────────
+     Netlify and Vercel enable Brotli/GZIP automatically.
+     For custom servers (NGINX), add to nginx.conf:
+       gzip on;
+       gzip_types text/html text/css application/javascript application/json image/svg+xml;
+       gzip_comp_level 6;
+       brotli on;
+       brotli_comp_level 6;
+
+     TARGET CORE WEB VITALS (after deployment):
+     ─────────────────────────────────────────────────────────────
+     LCP  (Largest Contentful Paint) → target < 2.5s
+     FID  (First Input Delay)        → target < 100ms
+     CLS  (Cumulative Layout Shift)  → target < 0.1
+     TTFB (Time to First Byte)       → target < 200ms
+
+     Test at: https://pagespeed.web.dev/
+     ═══════════════════════════════════════════════════════════════ -->
 
 </head>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECURITY HARDENING — SERVER HEADER CONFIGURATION
+     ───────────────────────────────────────────────────────────────
+     Do NOT implement these in HTML meta tags — they must be set as
+     HTTP response headers on your server or CDN.
+
+     NETLIFY (netlify.toml) — add to [[headers]] for = "/*":
+     ─────────────────────────────────────────────────────────────
+     Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://snap.licdn.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://px.ads.linkedin.com https://www.facebook.com; frame-ancestors 'none';"
+
+     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+     X-Frame-Options = "DENY"
+
+     X-Content-Type-Options = "nosniff"
+
+     Referrer-Policy = "strict-origin-when-cross-origin"
+
+     Permissions-Policy = "camera=(), microphone=(), geolocation=(self), payment=()"
+
+     ─────────────────────────────────────────────────────────────
+     VERCEL (vercel.json) — add to "headers" array:
+     ─────────────────────────────────────────────────────────────
+     {
+       "source": "/(.*)",
+       "headers": [
+         { "key": "Content-Security-Policy",     "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://snap.licdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none';" },
+         { "key": "Strict-Transport-Security",   "value": "max-age=31536000; includeSubDomains; preload" },
+         { "key": "X-Frame-Options",             "value": "DENY" },
+         { "key": "X-Content-Type-Options",      "value": "nosniff" },
+         { "key": "Referrer-Policy",             "value": "strict-origin-when-cross-origin" },
+         { "key": "Permissions-Policy",          "value": "camera=(), microphone=(), geolocation=(self)" }
+       ]
+     }
+
+     ─────────────────────────────────────────────────────────────
+     NOTES:
+     • HSTS preload: register at https://hstspreload.org after deployment
+     • CSP: if you add new third-party scripts, add their domain to script-src
+     • 'unsafe-inline' in script-src is required for inline JS — to remove it,
+       move all inline <script> blocks to external .js files with a CSP nonce
+     • Test your CSP at: https://csp-evaluator.withgoogle.com/
+     • Test security headers at: https://securityheaders.com/
+     ═══════════════════════════════════════════════════════════════ -->
+
 <body>
+
+<!-- Meta Pixel noscript fallback (fires regardless of consent — remove if strict GDPR required) -->
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"
+       alt="" loading="lazy"/>
+</noscript>
+<!-- LinkedIn noscript fallback -->
+<noscript>
+  <img height="1" width="1" style="display:none" alt=""
+       src="https://px.ads.linkedin.com/collect/?pid=LINKEDIN_PARTNER_ID&fmt=gif"
+       loading="lazy"/>
+</noscript>
 
 <!-- Cursor -->
 
@@ -2575,15 +3027,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ═══════════════════ NAV ═══════════════════ -->
 <nav id="nav">
-  <a href="#" class="nav-logo">Apex<span>.</span>Growth</a>
+  <a href="/" class="nav-logo" aria-label="Apex Growth Partners homepage">Apex<span>.</span>Growth</a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#cases">Results</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#insights">Insights</a></li>
-    <li><a href="#" class="nav-cta" data-open-modal aria-haspopup="dialog">Book Strategy Call</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#cta" class="nav-cta" data-open-modal aria-haspopup="dialog">Book Strategy Call</a></li>
   </ul>
-  <button class="nav-hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+  <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">☾</button>
+  <button type="button" class="nav-hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -2592,10 +3046,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="#cases">Results</a>
   <a href="#process">Process</a>
   <a href="#insights">Insights</a>
-  <a href="#" class="mobile-cta" data-open-modal>Book Strategy Call</a>
+  <a href="#careers">Careers</a>
+  <a href="#cta" class="mobile-cta" data-open-modal>Book Strategy Call</a>
 </div>
 
 <!-- ═══════════════════ HERO ═══════════════════ -->
+<!-- ── SEO HEADING STRUCTURE
+     H1: "We Build Predictable Revenue Infrastructure." (hero — one per page ✓)
+     H2: One per section (Problem, Authority, Services, Cases, Process, Testimonials, Insights, CTA)
+     H3: Sub-items within sections (pillar titles, step titles, insight titles, problem cards)
+     H4: Footer column headers only
+     Do not skip heading levels. Do not use headings for styling — use CSS classes instead.
+     ── -->
 <main id="main-content">
 <section id="hero">
   <div class="hero-bg"></div>
@@ -2634,7 +3096,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <div class="hero-ctas">
-      <a href="#" class="btn-primary" data-open-modal>
+      <a href="mailto:hello@apexgrowth.africa" class="btn-primary" data-open-modal>
         <span>Book a Revenue Strategy Call</span>
         <span class="arrow">→</span>
       </a>
@@ -2643,12 +3105,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="trust-strip">
       <span class="trust-label">Trusted by</span>
-      <div class="trust-logos">
-        <span class="trust-logo">Finserv Africa</span>
-        <span class="trust-logo">Meridian Health</span>
-        <span class="trust-logo">Volta Capital</span>
-        <span class="trust-logo">PrimeRealty GH</span>
-        <span class="trust-logo">TechBridge NG</span>
+      <div class="trust-logos" aria-label="Trusted by these companies">
+        <div class="trust-track">
+          <!-- Set 1 -->
+          <div class="trust-set">
+            <span class="trust-logo">Finserv Africa</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">Meridian Health</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">Volta Capital</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">PrimeRealty GH</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">TechBridge NG</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">AfriCare Group</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">Kora Finance</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+          </div>
+          <!-- Set 2 — exact duplicate for seamless loop -->
+          <div class="trust-set" aria-hidden="true">
+            <span class="trust-logo">Finserv Africa</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">Meridian Health</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">Volta Capital</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">PrimeRealty GH</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">TechBridge NG</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">AfriCare Group</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+            <span class="trust-logo">Kora Finance</span>
+            <span class="trust-sep" aria-hidden="true"></span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -2859,138 +3352,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="cases-header reveal">
       <h2 class="cases-headline">The work<br>speaks clearly.</h2>
-      <button class="btn-ghost" id="allCasesBtn" aria-label="View all case studies">All Case Studies →</button>
+      <button type="button" class="btn-ghost" id="allCasesBtn" aria-label="View all case studies">All Case Studies →</button>
     </div>
 
-    <div class="cases-grid">
-
-      <!-- Case 1 -->
-      <!-- Case 1: Meridian -->
-      <div class="case-card reveal">
-        <div class="case-header">
-          <div class="case-header-left">
-            <div class="case-industry">Fintech · Series B · West Africa</div>
-            <div class="case-client">Meridian Payment Solutions</div>
-          </div>
-          <div class="case-results-strip">
-            <div class="case-result">
-              <div class="case-result-num">312%</div>
-              <div class="case-result-label">Pipeline Growth</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">$2.4M</div>
-              <div class="case-result-label">Revenue Attributed</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">7.2×</div>
-              <div class="case-result-label">ROAS</div>
-            </div>
-          </div>
-        </div>
-        <div class="case-body">
-          <div class="case-col">
-            <div class="case-col-title">The Challenge</div>
-            <p>Meridian had a strong product and a growing user base but no structured demand generation function. Their B2B acquisition relied entirely on founder relationships, creating a ceiling on growth and making revenue unpredictable quarter-to-quarter. Marketing spend had no attribution and the sales team had no pipeline visibility.</p>
-          </div>
-          <div class="case-col">
-            <div class="case-col-title">Our Strategy</div>
-            <p>We started with a full commercial audit, then rebuilt their go-to-market from the ground up. This included an account-based marketing programme targeting enterprise payroll and treasury teams across Nigeria and Ghana, a LinkedIn demand engine with custom content and outbound sequences, and a HubSpot implementation with full pipeline visibility. We also redesigned their website for B2B conversion.</p>
-          </div>
-          <div class="case-col">
-            <div class="case-col-title">The Results</div>
-            <p>Within 6 months, qualified pipeline grew by 312%. Monthly SQLs went from 8 to 43. Cost per opportunity fell by 58%. The sales team had their highest-revenue quarter in company history.</p>
-          </div>
-        </div>
-        <div class="case-card-cta" data-case="meridian" role="button" tabindex="0" aria-label="Read full Meridian Payment Solutions case study">
-          <span class="case-card-cta-text">Read Full Case Study</span>
-          <span class="case-card-cta-arrow">→</span>
-        </div>
-      </div>
-
-      <!-- Case 2: Volta -->
-      <div class="case-card reveal reveal-delay-1">
-        <div class="case-header">
-          <div class="case-header-left">
-            <div class="case-industry">Real Estate Development · Ghana & Côte d'Ivoire</div>
-            <div class="case-client">Volta Prime Developments</div>
-          </div>
-          <div class="case-results-strip">
-            <div class="case-result">
-              <div class="case-result-num">189%</div>
-              <div class="case-result-label">Leads Increase</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">41%</div>
-              <div class="case-result-label">Cost Per Lead Reduction</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">GHS 18M</div>
-              <div class="case-result-label">Attributed Sales</div>
-            </div>
-          </div>
-        </div>
-        <div class="case-body">
-          <div class="case-col">
-            <div class="case-col-title">The Challenge</div>
-            <p>Volta had multiple premium residential projects launching simultaneously but relied entirely on traditional estate agents and word-of-mouth. Their digital presence was minimal and high-net-worth diaspora buyers in the UK, Canada, and USA could not discover or evaluate their offerings remotely.</p>
-          </div>
-          <div class="case-col">
-            <div class="case-col-title">Our Strategy</div>
-            <p>We built a diaspora-first digital strategy with premium Meta and Google campaigns targeting Ghanaian nationals abroad. A high-converting funnel with virtual tours, automated WhatsApp nurture sequences, and a CRM with real-time lead scoring was deployed within 30 days.</p>
-          </div>
-          <div class="case-col">
-            <div class="case-col-title">The Results</div>
-            <p>Qualified buyer inquiries grew 189% in four months. Cost per lead fell from GHS 780 to GHS 460. Two of three project phases were 70% reserved before physical launch events were held.</p>
-          </div>
-        </div>
-        <div class="case-card-cta" data-case="volta" role="button" tabindex="0" aria-label="Read full Volta Prime Developments case study">
-          <span class="case-card-cta-text">Read Full Case Study</span>
-          <span class="case-card-cta-arrow">→</span>
-        </div>
-      </div>
-
-      <!-- Case 3: AfriCare -->
-      <div class="case-card reveal reveal-delay-2">
-        <div class="case-header">
-          <div class="case-header-left">
-            <div class="case-industry">Private Healthcare Group · 8 Clinics · East & West Africa</div>
-            <div class="case-client">AfriCare Medical Group</div>
-          </div>
-          <div class="case-results-strip">
-            <div class="case-result">
-              <div class="case-result-num">94%</div>
-              <div class="case-result-label">Patient Booking Increase</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">4.1×</div>
-              <div class="case-result-label">Marketing ROI</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">6 Wks</div>
-              <div class="case-result-label">Time to First Results</div>
-            </div>
-          </div>
-        </div>
-        <div class="case-body">
-          <div class="case-col">
-            <div class="case-col-title">The Challenge</div>
-            <p>AfriCare operated 8 clinics with no group-level marketing strategy, no central CRM, and no attribution. New clinic openings took 12+ months to reach break-even and specialist departments were consistently underutilised.</p>
-          </div>
-          <div class="case-col">
-            <div class="case-col-title">Our Strategy</div>
-            <p>We deployed a group-wide revenue architecture: centralised HubSpot CRM synced to their booking system, hyper-local campaigns per clinic, a patient reactivation programme, and a reputation management system that lifted their Google rating from 3.8 to 4.7 in 90 days.</p>
-          </div>
-          <div class="case-col">
-            <div class="case-col-title">The Results</div>
-            <p>Patient bookings grew 94% across the group. New clinic break-even reduced from 12 months to 4. Marketing ROI reached 4.1× — leading the board to approve a 120% budget increase the following year.</p>
-          </div>
-        </div>
-        <div class="case-card-cta" data-case="africare" role="button" tabindex="0" aria-label="Read full AfriCare Medical Group case study">
-          <span class="case-card-cta-text">Read Full Case Study</span>
-          <span class="case-card-cta-arrow">→</span>
-        </div>
-      </div>
-
+    <div class="cases-grid" id="casesGrid">
+      <!-- skeleton shown while loading -->
+      <div class="cms-skeleton case-card"><div class="skel-line w60"></div><div class="skel-line w40"></div><div class="skel-line w80"></div></div>
+      <div class="cms-skeleton case-card"><div class="skel-line w60"></div><div class="skel-line w40"></div><div class="skel-line w80"></div></div>
+      <div class="cms-skeleton case-card"><div class="skel-line w60"></div><div class="skel-line w40"></div><div class="skel-line w80"></div></div>
     </div>
   </div>
 </section>
@@ -3043,49 +3412,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="testi-headline">What leaders say<br>about the results.</h2>
     </div>
 
-    <div class="testi-grid">
-      <div class="testi-featured reveal">
-        <div class="testi-quote-mark">"</div>
-        <p class="testi-text">
-          Before Apex Growth, our marketing team was producing content and running campaigns, but I had no idea whether any of it was driving revenue. Six months in, I have a real-time dashboard, a qualified pipeline that's grown by 4× and, for the first time, a marketing team I can confidently report to my board as a revenue function. This is a fundamentally different category of agency.
-        </p>
-        <div class="testi-attr">
-          <div class="testi-avatar">AK</div>
-          <div>
-            <div class="testi-name">Adaeze Kofi-Mensah</div>
-            <div class="testi-role">CEO · Meridian Payment Solutions</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testi-stack">
-        <div class="testi-card reveal reveal-delay-1">
-          <p class="testi-card-text">
-            "They came in, understood our commercial model in the first week, and built a system I wish we'd had four years ago. Our sales team went from chasing leads to managing inbound pipeline. Revenue follow-through has never been cleaner."
-          </p>
-          <div class="testi-card-attr">
-            <div class="testi-card-name">Emmanuel Osei-Bonsu</div>
-            <div class="testi-card-role">Commercial Director · Volta Prime Developments</div>
-          </div>
-        </div>
-        <div class="testi-card reveal reveal-delay-2">
-          <p class="testi-card-text">
-            "The ROI clarity alone was worth the engagement. But what actually changed our business was the automation infrastructure. We can now onboard 3× the patients with the same team. That is a structural improvement."
-          </p>
-          <div class="testi-card-attr">
-            <div class="testi-card-name">Dr. Ngozi Amaechi</div>
-            <div class="testi-card-role">Group CMO · AfriCare Medical Group</div>
-          </div>
-        </div>
-        <div class="testi-card reveal reveal-delay-3">
-          <p class="testi-card-text">
-            "What I respect most is that they push back when they disagree. I've worked with agencies who tell you what you want to hear. Apex Growth tells you what your numbers actually say. That's rare."
-          </p>
-          <div class="testi-card-attr">
-            <div class="testi-card-name">Kwabena Asante</div>
-            <div class="testi-card-role">Founder & CEO · TechBridge Nigeria</div>
-          </div>
-        </div>
+    <div class="testi-grid" id="testiGrid">
+      <div class="cms-skeleton testi-featured"><div class="skel-line w90"></div><div class="skel-line w80" style="margin-top:12px"></div><div class="skel-line w70" style="margin-top:12px"></div></div>
+      <div class="testi-stack" id="testiStack">
+        <div class="cms-skeleton testi-card"><div class="skel-line w90"></div><div class="skel-line w60" style="margin-top:12px"></div></div>
+        <div class="cms-skeleton testi-card"><div class="skel-line w90"></div><div class="skel-line w60" style="margin-top:12px"></div></div>
+        <div class="cms-skeleton testi-card"><div class="skel-line w90"></div><div class="skel-line w60" style="margin-top:12px"></div></div>
       </div>
     </div>
   </div>
@@ -3099,43 +3431,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="insights-header reveal">
       <h2 class="insights-headline">The thinking<br>behind the growth.</h2>
-      <button class="btn-ghost" id="allInsightsBtn" aria-label="View all insights">All Insights →</button>
+      <button type="button" class="btn-ghost" id="allInsightsBtn" aria-label="View all insights">All Insights →</button>
     </div>
 
-    <div class="insights-grid">
-      <div class="insight-card reveal" data-insight="pipeline" role="button" tabindex="0" aria-label="Read: The Revenue Architecture Playbook">
-        <div class="insight-image">
-          <div class="insight-image-label">Framework</div>
-        </div>
-        <div class="insight-body">
-          <div class="insight-tag">Revenue Operations</div>
-          <h3 class="insight-title">The Revenue Architecture Playbook: Why African B2B Companies Keep Losing Pipeline at the Same Three Points</h3>
-          <p class="insight-excerpt">Most B2B organisations in Africa have the same structural problem: marketing, sales, and customer success operate in silos. This piece breaks down the three pipeline failure points we see repeatedly — and the systems architecture that fixes them permanently.</p>
-          <div class="insight-read">Read Framework <span>→</span></div>
-        </div>
-      </div>
-      <div class="insight-card reveal reveal-delay-1" data-insight="fintech" role="button" tabindex="0" aria-label="Read: How Fintech Brands Win Enterprise Clients in Africa">
-        <div class="insight-image">
-          <div class="insight-image-label">Analysis</div>
-        </div>
-        <div class="insight-body">
-          <div class="insight-tag">Fintech Marketing</div>
-          <h3 class="insight-title">How Fintech Brands Win Enterprise Clients in Africa Without Cold Calling</h3>
-          <p class="insight-excerpt">Enterprise B2B acquisition in African fintech requires a fundamentally different playbook than what works in mature markets. Here's the demand generation architecture we've used to close six-figure deals.</p>
-          <div class="insight-read">Read Analysis <span>→</span></div>
-        </div>
-      </div>
-      <div class="insight-card reveal reveal-delay-2" data-insight="roi-benchmarks" role="button" tabindex="0" aria-label="Read: Benchmarking Digital Marketing ROI for African SMEs">
-        <div class="insight-image">
-          <div class="insight-image-label">Data Study</div>
-        </div>
-        <div class="insight-body">
-          <div class="insight-tag">Marketing ROI</div>
-          <h3 class="insight-title">Benchmarking Digital Marketing ROI for African SMEs: The 2025 Data</h3>
-          <p class="insight-excerpt">What does good actually look like? We analysed campaigns across 12 African markets to establish the first sector-specific ROI benchmarks for digital marketing investment.</p>
-          <div class="insight-read">Read Study <span>→</span></div>
-        </div>
-      </div>
+    <div class="insights-grid" id="insightsGrid">
+      <div class="cms-skeleton insight-card"><div class="insight-image"></div><div class="skel-line w70" style="margin:20px 24px 8px"></div><div class="skel-line w90" style="margin:0 24px 8px"></div><div class="skel-line w50" style="margin:0 24px"></div></div>
+      <div class="cms-skeleton insight-card"><div class="insight-image"></div><div class="skel-line w70" style="margin:20px 24px 8px"></div><div class="skel-line w90" style="margin:0 24px 8px"></div><div class="skel-line w50" style="margin:0 24px"></div></div>
+      <div class="cms-skeleton insight-card"><div class="insight-image"></div><div class="skel-line w70" style="margin:20px 24px 8px"></div><div class="skel-line w90" style="margin:0 24px 8px"></div><div class="skel-line w50" style="margin:0 24px"></div></div>
     </div>
   </div>
 </section>
@@ -3154,7 +3456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       The Revenue Strategy Call is a 45-minute session with a senior Apex Growth strategist. We'll review your current commercial operation, identify the highest-leverage growth opportunities, and outline exactly what a growth architecture would look like for your business. No pitch. No pressure. Just strategic clarity.
     </p>
     <div class="cta-actions reveal reveal-delay-2">
-      <a href="#" class="btn-primary" data-open-modal style="font-size:13px; padding:20px 40px;" aria-label="Book your revenue strategy call">
+      <a href="mailto:hello@apexgrowth.africa" class="btn-primary" data-open-modal style="font-size:13px; padding:20px 40px;" aria-label="Book your revenue strategy call">
         <span>Book Your Revenue Strategy Call</span>
         <span class="arrow">→</span>
       </a>
@@ -3166,11 +3468,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+
+<!-- ═══════════════════════════════════════════════════════
+     CAREERS
+═══════════════════════════════════════════════════════ -->
+<section id="careers" aria-label="Careers at Apex Growth">
+  <div class="container">
+    <div class="section-eyebrow reveal">
+      <span class="label">Join the Team</span>
+    </div>
+    <div class="careers-header reveal">
+      <div>
+        <h2 class="careers-headline">Build careers<br>that move markets.</h2>
+      </div>
+      <p class="careers-sub">We hire operators, strategists, and builders who are serious about revenue. No passengers.</p>
+    </div>
+
+    <!-- Default fallback jobs (shown if dynamic feed is unavailable) -->
+    <div class="careers-grid" id="careersGrid">
+      <div class="job-card reveal">
+        <div class="job-left">
+          <div class="job-meta">
+            <span class="job-dept">Revenue</span>
+            <span class="job-type">Contract / Full-time</span>
+            <span class="job-location">· Accra / Remote</span>
+          </div>
+          <div class="job-title">Revenue Strategist</div>
+          <div class="job-excerpt">Own GTM strategy, positioning, and funnel architecture for B2B growth engagements.</div>
+        </div>
+        <a href="mailto:careers@apexgrowth.africa?subject=Application%3A%20Revenue%20Strategist" class="job-cta" aria-label="Apply for Revenue Strategist">
+          Apply Now <span class="job-cta-arrow">→</span>
+        </a>
+      </div>
+
+      <div class="job-card reveal reveal-delay-1">
+        <div class="job-left">
+          <div class="job-meta">
+            <span class="job-dept">Performance</span>
+            <span class="job-type">Contract / Full-time</span>
+            <span class="job-location">· Accra / Remote</span>
+          </div>
+          <div class="job-title">Performance Marketing Lead</div>
+          <div class="job-excerpt">Run LinkedIn/Google demand gen, attribution, and conversion optimisation for enterprise pipeline.</div>
+        </div>
+        <a href="mailto:careers@apexgrowth.africa?subject=Application%3A%20Performance%20Marketing%20Lead" class="job-cta" aria-label="Apply for Performance Marketing Lead">
+          Apply Now <span class="job-cta-arrow">→</span>
+        </a>
+      </div>
+
+      <div class="careers-empty" style="grid-column:1/-1;">
+        <h3 style="margin:0 0 10px 0;">Don’t see your role?</h3>
+        <p style="margin:0 0 18px 0;">Send an open application — CV + a short note on the outcomes you can drive.</p>
+        <a href="mailto:hello@apexgrowth.africa" class="btn-primary" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none">
+          Send Open Application <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="careers-empty" style="margin-top:20px;">
+        <p style="margin:0;">JavaScript is disabled. Email <a href="mailto:careers@apexgrowth.africa">careers@apexgrowth.africa</a> to apply.</p>
+      </div>
+    </noscript>
+  </div>
+</section>
+
 <!-- ═══════════════════ FOOTER ═══════════════════ -->
 </main>
 
 <!-- Social Follow Bar -->
-<div style="background:var(--ink);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:24px var(--pad);">
+<div style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:24px var(--pad);">
   <div style="max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
     <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--white-faint);">Follow our growth insights</span>
     <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;">
@@ -3208,48 +3575,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer-logo">Apex<span>.</span>Growth Partners</div>
       <p>Revenue architecture for enterprise, fintech, and high-growth companies across Africa and globally. Built in Ghana. Operating across 12 markets.</p>
       <div class="footer-contact">
-        <a href="/cdn-cgi/l/email-protection#592a2d2b382d3c3e201938293c213e2b362e2d3177383f2b303a38"><span class="__cf_email__" data-cfemail="3e4d4a4c5f4a5b59477e5f4e5b46594c51494a56105f584c575d5f">[email&#160;protected]</span></a>
+        <a href="mailto:hello@apexgrowth.africa" aria-label="Email Apex Growth Partners"><span class="__cf_email__" data-cfemail="67141315061302001e270617021f00150810130f490601150e0406">[email&#160;protected]</span></a>
         <a href="tel:+233000000000">+233 000 000 000</a>
-        <a href="#">The Ridge, Accra · Ghana</a>
+        <a href="https://maps.google.com/?q=The+Ridge+Accra+Ghana" target="_blank" rel="noopener noreferrer" aria-label="View Apex Growth Partners office on Google Maps">The Ridge, Accra · Ghana</a>
       </div>
     </div>
     <div class="footer-col">
       <h4>Services</h4>
       <ul>
-        <li><a href="#">Revenue Strategy</a></li>
-        <li><a href="#">Demand Generation</a></li>
-        <li><a href="#">Performance Marketing</a></li>
-        <li><a href="#">CRM & Automation</a></li>
-        <li><a href="#">Sales Enablement</a></li>
+        <li><a href="#services">Revenue Strategy</a></li>
+        <li><a href="#services">Demand Generation</a></li>
+        <li><a href="#services">Performance Marketing</a></li>
+        <li><a href="#services">CRM &amp; Automation</a></li>
+        <li><a href="#services">Sales Enablement</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
-        <li><a href="#">About Apex Growth</a></li>
-        <li><a href="#">Case Studies</a></li>
-        <li><a href="#">Insights</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#authority">About Apex Growth</a></li>
+        <li><a href="#cases">Case Studies</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#cta">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Markets</h4>
       <ul>
-        <li><a href="#">Ghana</a></li>
-        <li><a href="#">Nigeria</a></li>
-        <li><a href="#">Kenya</a></li>
-        <li><a href="#">Côte d'Ivoire</a></li>
-        <li><a href="#">UK & Diaspora</a></li>
+        <li><a href="#cases">Ghana</a></li>
+        <li><a href="#cases">Nigeria</a></li>
+        <li><a href="#cases">Kenya</a></li>
+        <li><a href="#cases">Côte d'Ivoire</a></li>
+        <li><a href="#cases">UK &amp; Diaspora</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2025 Apex Growth Partners Ltd. All rights reserved. Accra, Ghana.</div>
     <div class="footer-socials">
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
+      <a href="https://www.linkedin.com/company/apex-growth-partners" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://twitter.com/apexgrowth_af" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Twitter / X
+      </a>
+      <a href="https://www.instagram.com/apexgrowthpartners" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/apexgrowthpartners" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.youtube.com/@apexgrowthpartners" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
     </div>
   </div>
 </footer>
@@ -3280,11 +3664,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     document.querySelectorAll('a, button, .diff-card, .pillar, .case-card, .testi-card, .insight-card, .step').forEach(el => {
       el.addEventListener('mouseenter', () => {
         cursor.style.cssText += ';width:16px;height:16px;background:var(--gold-light)';
-        cursorRing.style.cssText += ';width:56px;height:56px;border-color:rgba(200,151,58,0.6)';
+        cursorRing.style.cssText += ';width:56px;height:56px;border-color:rgba(176,120,32,0.50)';
       });
       el.addEventListener('mouseleave', () => {
         cursor.style.cssText += ';width:8px;height:8px;background:var(--gold)';
-        cursorRing.style.cssText += ';width:36px;height:36px;border-color:rgba(200,151,58,0.4)';
+        cursorRing.style.cssText += ';width:36px;height:36px;border-color:rgba(176,120,32,0.35)';
       });
     });
   } else {
@@ -3335,15 +3719,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   // ── Scroll reveal ──
   const revealEls = document.querySelectorAll('.reveal');
-  const revealObserver = new IntersectionObserver(entries => {
+  window._revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
+        window._revealObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  revealEls.forEach(el => revealObserver.observe(el));
+  revealEls.forEach(el => window._revealObserver.observe(el));
 
   // ── Metric counters (clean data-attribute approach) ──
   document.querySelectorAll('.metric-num').forEach(el => {
@@ -3388,7 +3772,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   // ── Case card hover glow ──
   document.querySelectorAll('.case-header').forEach(header => {
-    header.addEventListener('mouseenter', () => { header.parentElement.style.boxShadow = '0 0 0 1px rgba(200,151,58,0.3)'; });
+    header.addEventListener('mouseenter', () => { header.parentElement.style.boxShadow = '0 0 0 1px rgba(176,120,32,0.25)'; });
     header.addEventListener('mouseleave', () => { header.parentElement.style.boxShadow = ''; });
   });
 </script>
@@ -3403,7 +3787,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="modal-tag">Revenue Strategy Call</div>
       <h2 class="modal-title" id="modalTitle">Book Your Strategy Session</h2>
       <p class="modal-sub">45 minutes with a senior strategist. We'll review your current commercial setup and outline a growth architecture for your business.</p>
-      <button class="modal-close" id="modalClose" aria-label="Close booking modal">&times;</button>
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close booking modal">&times;</button>
     </div>
 
     <!-- Form -->
@@ -3425,49 +3809,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <form id="strategyForm" name="strategy-call" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <form
+        id="strategyForm"
+        name="strategy-call"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        data-netlify-recaptcha="false"
+        novalidate>
 
+        <!-- NETLIFY REQUIRED: hidden form-name input -->
         <input type="hidden" name="form-name" value="strategy-call">
-        <p style="display:none;">
-          <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
-        </p>
+
+        <!-- HONEYPOT: bot protection — hidden from real users -->
+        <div style="display:none" aria-hidden="true">
+          <label>Do not fill this field if you are human:
+            <input type="text" name="bot-field" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
 
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="firstName">First Name<span class="req">*</span></label>
-            <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Kwame" autocomplete="given-name" required>
-            <div class="field-error" id="firstNameErr">Please enter your first name</div>
+            <input type="text" id="firstName" aria-describedby="firstNameErr" name="firstName" class="form-input" placeholder="Kwame" autocomplete="given-name" required aria-required="true">
+            <div class="field-error" id="firstNameErr" role="alert" aria-live="assertive">Please enter your first name</div>
           </div>
           <div class="form-group">
             <label class="form-label" for="lastName">Last Name<span class="req">*</span></label>
-            <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Asante" autocomplete="family-name" required>
-            <div class="field-error" id="lastNameErr">Please enter your last name</div>
+            <input type="text" id="lastName" aria-describedby="lastNameErr" name="lastName" class="form-input" placeholder="Asante" autocomplete="family-name" required aria-required="true">
+            <div class="field-error" id="lastNameErr" role="alert" aria-live="assertive">Please enter your last name</div>
           </div>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="email">Work Email<span class="req">*</span></label>
-          <input type="email" id="email" name="email" class="form-input" placeholder="kwame@company.com" autocomplete="email" required>
-          <div class="field-error" id="emailErr">Please enter a valid work email</div>
+          <input type="email" id="email" aria-describedby="emailErr" name="email" class="form-input" placeholder="kwame@company.com" autocomplete="email" required aria-required="true">
+          <div class="field-error" id="emailErr" role="alert" aria-live="assertive">Please enter a valid work email</div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="phone">Phone / WhatsApp<span class="req">*</span></label>
-            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+233 24 000 0000" autocomplete="tel" required>
-            <div class="field-error" id="phoneErr">Please enter your phone number</div>
+            <input type="tel" id="phone" aria-describedby="phoneErr" name="phone" class="form-input" placeholder="+233 24 000 0000" autocomplete="tel" required aria-required="true">
+            <div class="field-error" id="phoneErr" role="alert" aria-live="assertive">Please enter your phone number</div>
           </div>
           <div class="form-group">
             <label class="form-label" for="company">Company Name<span class="req">*</span></label>
-            <input type="text" id="company" name="company" class="form-input" placeholder="Your Company Ltd" required>
-            <div class="field-error" id="companyErr">Please enter your company name</div>
+            <input type="text" id="company" aria-describedby="companyErr" name="company" class="form-input" placeholder="Your Company Ltd" required aria-required="true">
+            <div class="field-error" id="companyErr" role="alert" aria-live="assertive">Please enter your company name</div>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="role">Your Role<span class="req">*</span></label>
-            <select id="role" name="role" class="form-select" required>
+            <select id="role" aria-describedby="roleErr" name="role" class="form-select" required aria-required="true">
               <option value="" disabled selected>Select your role</option>
               <option value="ceo">CEO / Founder / MD</option>
               <option value="cmo">CMO / Marketing Director</option>
@@ -3476,11 +3872,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <option value="other-exec">Other C-Suite / VP</option>
               <option value="manager">Senior Manager</option>
             </select>
-            <div class="field-error" id="roleErr">Please select your role</div>
+            <div class="field-error" id="roleErr" role="alert" aria-live="assertive">Please select your role</div>
           </div>
           <div class="form-group">
             <label class="form-label" for="industry">Industry<span class="req">*</span></label>
-            <select id="industry" name="industry" class="form-select" required>
+            <select id="industry" aria-describedby="industryErr" name="industry" class="form-select" required aria-required="true">
               <option value="" disabled selected>Select industry</option>
               <option value="fintech">Fintech / Financial Services</option>
               <option value="real-estate">Real Estate / Property</option>
@@ -3492,13 +3888,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <option value="ngo">NGO / Development</option>
               <option value="other">Other</option>
             </select>
-            <div class="field-error" id="industryErr">Please select your industry</div>
+            <div class="field-error" id="industryErr" role="alert" aria-live="assertive">Please select your industry</div>
           </div>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="budget">Monthly Marketing Budget<span class="req">*</span></label>
-          <select id="budget" name="budget" class="form-select" required>
+          <select id="budget" aria-describedby="budgetErr" name="budget" class="form-select" required aria-required="true">
             <option value="" disabled selected>Select budget range</option>
             <option value="lt1k">Under $1,000 / month</option>
             <option value="1k-3k">$1,000 – $3,000 / month</option>
@@ -3507,7 +3903,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <option value="gt10k">Over $10,000 / month</option>
             <option value="unsure">Not yet determined</option>
           </select>
-          <div class="field-error" id="budgetErr">Please select a budget range</div>
+          <div class="field-error" id="budgetErr" role="alert" aria-live="assertive">Please select a budget range</div>
           <div class="form-hint">This helps us prepare the right strategic framework for your session.</div>
         </div>
 
@@ -3521,11 +3917,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button type="button" class="time-slot" data-slot="Sat 10am–12pm">Sat<br>10am–12pm</button>
             <button type="button" class="time-slot" data-slot="Flexible">Flexible /<br>Any time</button>
           </div>
+          <!-- Hidden input captures selected time slot for Netlify form submission -->
+          <input type="hidden" id="preferredTime" name="preferredTime" value="">
         </div>
 
         <div class="form-group">
           <label class="form-label" for="challenge">Biggest Growth Challenge <span style="color:var(--white-faint);font-weight:300;text-transform:none;letter-spacing:0;font-family:var(--sans);font-size:11px;">(optional)</span></label>
-          <textarea id="challenge" name="challenge" class="form-textarea" placeholder="Briefly describe the main challenge you're trying to solve — e.g. inconsistent lead flow, poor marketing ROI visibility, sales and marketing misalignment..."></textarea>
+          <textarea id="challenge" aria-describedby="challengeErr" name="challenge" class="form-textarea" placeholder="Briefly describe the main challenge you're trying to solve — e.g. inconsistent lead flow, poor marketing ROI visibility, sales and marketing misalignment..."></textarea>
+        <div class="field-error" id="challengeErr" role="alert" aria-live="assertive"></div>
         </div>
 
         <button type="submit" class="form-submit" id="submitBtn">
@@ -3545,7 +3944,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Success State -->
-    <div class="modal-success" id="modalSuccess">
+    <div class="modal-success" id="modalSuccess" role="status" aria-live="polite">
       <div class="success-icon">&#10003;</div>
       <h3 class="success-title">Request Confirmed</h3>
       <p class="success-msg">Thank you. A senior Apex Growth strategist will reach out within 4 business hours to confirm your session time and send a brief pre-call questionnaire.</p>
@@ -3570,27 +3969,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const formEl    = document.getElementById('modalForm');
   let selectedSlot = '';
 
-  // Reset modal (show form again after success)
-  function resetModalState() {
-    // show form, hide success
-    if (successEl) successEl.style.display = 'none';
-    if (formEl) formEl.style.display = 'block';
-
-    // reset form fields + slot selection
-    if (form) form.reset();
-    selectedSlot = '';
-    document.querySelectorAll('.time-slot.selected').forEach(b => b.classList.remove('selected'));
-
-    // reset submit button state
-    if (submitBtn) submitBtn.disabled = false;
-    if (submitTxt) submitTxt.textContent = 'Confirm Strategy Call Request';
-    if (spinner) spinner.style.display = 'none';
-    if (submitArr) submitArr.style.display = 'inline';
-  }
-
   // Open modal
   function openModal() {
-    resetModalState();
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
     // Focus first input after transition
@@ -3604,8 +3984,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   function closeModal() {
     overlay.classList.remove('open');
     document.body.style.overflow = '';
-    // wait for close animation then reset so next open starts fresh
-    setTimeout(resetModalState, 350);
   }
 
   // Bind all [data-open-modal] triggers
@@ -3658,6 +4036,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.querySelectorAll('.time-slot').forEach(b => b.classList.remove('selected'));
       this.classList.add('selected');
       selectedSlot = this.dataset.slot;
+      // Also set the hidden form input so Netlify captures it
+      const timeInput = document.getElementById('preferredTime');
+      if (timeInput) timeInput.value = selectedSlot;
     });
   });
 
@@ -3738,40 +4119,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     spinner.style.display = 'block';
     submitArr.style.display = 'none';
 
-    // ── Submit to Netlify Forms (static hosting friendly) ──
-    // NOTE: Replace/extend this with a CRM webhook (HubSpot/Zoho) if needed.
-    // Netlify requires URL-encoded form data and a `form-name` field.
-    const honeypot = (document.querySelector('input[name="bot-field"]') || {}).value || '';
-    if (honeypot) return; // spam trap
-
-    function encode(dataObj) {
-      return Object.keys(dataObj)
-        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(dataObj[key]))
-        .join('&');
-    }
+    // ═══════════════════════════════════════════════════════════════
+    // FORM SUBMISSION — OPTION A: Netlify Forms (ACTIVE — recommended)
+    // Works automatically on Netlify hosting with zero configuration.
+    // Submissions appear in: Netlify Dashboard → Forms → strategy-call
+    // ═══════════════════════════════════════════════════════════════
+    const netlifyData = new FormData(form);
 
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'strategy-call', ...data })
+      body: new URLSearchParams(netlifyData).toString()
     })
-    .then(() => {
-      // Track lead conversion
-      trackEvent('generate_lead', {
-        lead_source: 'strategy_call_modal',
-        industry: data.industry,
-        budget: data.budget
-      });
-      showSuccess(data);
+    .then(function(response) {
+      if (response.ok) {
+        showSuccess(data);
+      } else {
+        showFormError('Submission failed. Please try again or email us directly.');
+      }
     })
-    .catch(() => {
-      // Soft-fail: re-enable button + show a friendly message
-      submitBtn.disabled = false;
-      submitTxt.textContent = 'Confirm & Reserve Slot';
-      spinner.style.display = 'none';
-      submitArr.style.display = 'inline';
-      alert('Sorry — something went wrong submitting the form. Please try again or email hello@apexgrowth.africa.');
+    .catch(function(error) {
+      console.error('Form submission error:', error);
+      showFormError('Network error. Please check your connection and try again.');
     });
+
+    // ═══════════════════════════════════════════════════════════════
+    // OPTION B: EmailJS (uncomment to use instead of Netlify)
+    // 1. Sign up at emailjs.com (free: 200 emails/month)
+    // 2. Add EmailJS CDN script tag to <head> (find 'emailjs' in the file for exact tag)
+    // 3. Replace YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY
+    // ───────────────────────────────────────────────────────────────
+    // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', data, 'YOUR_PUBLIC_KEY')
+    //   .then(() => showSuccess(data))
+    //   .catch(err => showFormError('Email send failed: ' + err.text));
+
+    // ═══════════════════════════════════════════════════════════════
+    // OPTION C: Webhook POST to CRM / Zapier / Make.com
+    // Uncomment and replace YOUR_WEBHOOK_URL with:
+    //   - Zapier Webhook:  https://hooks.zapier.com/hooks/catch/XXXXX/YYYYY/
+    //   - Make.com:        https://hook.eu1.make.com/XXXXXXXXXXXXXX
+    //   - Custom backend:  https://api.yourdomain.com/leads
+    // ───────────────────────────────────────────────────────────────
+    // fetch('YOUR_WEBHOOK_URL', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify(data)
+    // })
+    // .then(r => r.ok ? showSuccess(data) : showFormError('Webhook failed'))
+    // .catch(() => showFormError('Network error. Please try again.'));
   });
 
   // ── Analytics event tracking helpers ──
@@ -3801,6 +4196,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   });
 
+  // ── Form error state (network / server failure) ──
+  function showFormError(msg) {
+    submitBtn.disabled = false;
+    submitTxt.textContent = 'Confirm Strategy Call Request';
+    spinner.style.display = 'none';
+    submitArr.style.display = '';
+    // Show inline error above submit button
+    var existingErr = document.getElementById('submitError');
+    if (!existingErr) {
+      var errDiv = document.createElement('div');
+      errDiv.id = 'submitError';
+      errDiv.style.cssText = 'background:rgba(192,75,58,0.12);border:1px solid rgba(192,75,58,0.4);color:#e87a6a;padding:14px 20px;font-size:13px;line-height:1.6;margin-bottom:16px;';
+      errDiv.textContent = msg || 'Something went wrong. Please try again.';
+      submitBtn.parentNode.insertBefore(errDiv, submitBtn);
+    } else {
+      existingErr.textContent = msg;
+    }
+  }
+
   function showSuccess(data) {
     // Hide form, show success
     // Fire conversion events
@@ -3818,8 +4232,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     summary.textContent = 'Confirmation will be sent to ' + data.email + ' within 4 business hours.';
     // Scroll modal to top
     modalBox.scrollTop = 0;
-    // Auto-close after a short delay
-    setTimeout(() => closeModal(), 2500);
   }
 })();
 </script>
@@ -3831,7 +4243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="detail-close">
       <span class="detail-close-label" id="caseDetailLabel">Case Study</span>
-      <button class="detail-close-btn" id="caseDetailClose" aria-label="Close case study">&times;</button>
+      <button type="button" class="detail-close-btn" id="caseDetailClose" aria-label="Close case study">&times;</button>
     </div>
 
     <!-- Hero -->
@@ -3850,7 +4262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Bottom CTA -->
     <div class="detail-cta-strip">
       <div class="detail-cta-text">Ready for <em>results like these?</em></div>
-      <button class="btn-primary" data-open-modal style="font-size:12px; padding:16px 28px;">
+      <button type="button" class="btn-primary" data-open-modal style="font-size:12px; padding:16px 28px;">
         <span>Book a Strategy Call</span>
         <span style="font-size:15px;">→</span>
       </button>
@@ -3865,14 +4277,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="detail-close">
       <span class="detail-close-label" id="insightDetailLabel">Insight</span>
-      <button class="detail-close-btn" id="insightDetailClose" aria-label="Close insight">&times;</button>
+      <button type="button" class="detail-close-btn" id="insightDetailClose" aria-label="Close insight">&times;</button>
     </div>
 
     <div class="insight-detail-body" id="insightDetailBody"></div>
 
     <div class="detail-cta-strip">
       <div class="detail-cta-text">Want these strategies <em>working for you?</em></div>
-      <button class="btn-primary" data-open-modal style="font-size:12px; padding:16px 28px;">
+      <button type="button" class="btn-primary" data-open-modal style="font-size:12px; padding:16px 28px;">
         <span>Book a Strategy Call</span>
         <span style="font-size:15px;">→</span>
       </button>
@@ -4245,7 +4657,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const caseModal    = document.getElementById('caseDetailModal');
   const caseClose    = document.getElementById('caseDetailClose');
 
+  function escapeHtml2(s) {
+    return String(s || '')
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;')
+      .replace(/'/g,'&#39;');
+  }
+
+  
   function openCase(id) {
+    // Prefer CMS cases (Google Sheets) if available
+    if (Array.isArray(window._cmsCases) && window._cmsCases.length) {
+      var key = String(id || '');
+      var row = window._cmsCases.find(function(r){
+        return String(r.id||'') === key || String(r.slug||'') === key;
+      });
+      if (row) {
+        document.getElementById('caseDetailLabel').textContent = row.industry ? escapeHtml2(row.industry) : 'Case Study';
+        document.getElementById('caseDetailTitle').textContent = row.client || 'Client (NDA)';
+        document.getElementById('cdIndustry').textContent = row.industry || '';
+        document.getElementById('cdSummary').textContent = row.challenge || '';
+
+        var results = [row.results_1, row.results_2, row.results_3].filter(Boolean);
+        document.getElementById('cdResults').innerHTML = results.length
+          ? '<div class="detail-results-grid">' + results.map(function(x){return '<div class="detail-result-card"><div class="detail-result-text">' + escapeHtml2(x) + '</div></div>';}).join('') + '</div>'
+          : '';
+
+        var bodyParts = [];
+        if (row.strategy) bodyParts.push('<h3>Strategy</h3><p>' + escapeHtml2(row.strategy).replace(/\n/g,'<br>') + '</p>');
+        if (row.execution) bodyParts.push('<h3>Execution</h3><p>' + escapeHtml2(row.execution).replace(/\n/g,'<br>') + '</p>');
+        if (row.services_used) bodyParts.push('<h3>Services Used</h3><p>' + escapeHtml2(row.services_used) + '</p>');
+        if (row.timeline) bodyParts.push('<h3>Timeline</h3><p>' + escapeHtml2(row.timeline) + '</p>');
+        document.getElementById('cdBody').innerHTML = bodyParts.join('');
+
+        // Re-bind booking button
+        caseModal.querySelectorAll('[data-open-modal]').forEach(btn => {
+          btn.addEventListener('click', () => { closeCase(); setTimeout(openBooking, 200); });
+        });
+
+        caseOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        caseModal.scrollTop = 0;
+        setTimeout(() => caseClose.focus(), 350);
+        return;
+      }
+    }
+
+    // Fallback to built-in static CASES object
     const data = CASES[id];
     if (!data) return;
     document.getElementById('caseDetailLabel').textContent = data.label;
@@ -4264,12 +4722,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     setTimeout(() => caseClose.focus(), 350);
   }
 
+
   function closeCase() {
     caseOverlay.classList.remove('open');
     document.body.style.overflow = '';
   }
 
-  caseClose.addEventListener('click', closeCase);
+  
+  // Expose for CMS-rendered cards / external scripts
+  window.openCase = openCase;
+  window.closeCase = closeCase;
+caseClose.addEventListener('click', closeCase);
   caseOverlay.addEventListener('click', e => { if (e.target === caseOverlay) closeCase(); });
 
   // Bind case card CTAs
@@ -4304,7 +4767,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const insightModal   = document.getElementById('insightDetailModal');
   const insightClose   = document.getElementById('insightDetailClose');
 
+  function escapeHtml(s) {
+    return String(s || '')
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;')
+      .replace(/'/g,'&#39;');
+  }
+
+  
   function openInsight(id) {
+    // 1) Prefer CMS-provided insights (Google Sheets) if present
+    if (Array.isArray(window._cmsInsights) && window._cmsInsights.length) {
+      var key = String(id || '');
+      var row = window._cmsInsights.find(function(r) {
+        var rSlug = (r.slug || '').trim();
+        if (!rSlug) {
+          // derive slug from title if slug column isn't provided
+          rSlug = (r.title || '').toLowerCase().trim()
+            .replace(/[^a-z0-9\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+        }
+        return String(r.id||'') === key || rSlug === key;
+      });
+
+      if (row) {
+        var link = (row.link || '').trim();
+        var full = (row.full_content || row.content || '').trim();
+        // If the sheet row points to a page and has no long-form content, navigate there
+        if (link && link !== '#' && !full) {
+          window.location.href = link;
+          return;
+        }
+
+        // Otherwise, open the insight modal and render the sheet content
+        document.getElementById('insightDetailLabel').textContent = (row.tag || row.label || 'Insight');
+        var title = String(row.title || 'Insight');
+        var excerpt = String(row.excerpt || '');
+        var body = '';
+        if (title) body += '<h2 style="margin:0 0 12px; font-size:clamp(26px,3vw,34px); line-height:1.15;">' + escapeHtml(title) + '</h2>';
+        if (excerpt) body += '<p style="color:var(--white-dim); margin:0 0 18px;">' + escapeHtml(excerpt) + '</p>';
+
+        if (full) {
+          // Convert line breaks into paragraphs
+          var paras = full.split(/\n{2,}/).map(function(p){return p.trim();}).filter(Boolean);
+          body += paras.map(function(p){ return '<p>' + escapeHtml(p).replace(/\n/g,'<br>') + '</p>'; }).join('');
+        } else {
+          body += '<p style="color:var(--white-dim);">Add <strong>full_content</strong> (or <strong>content</strong>) in your insights sheet to show the full insight here.</p>';
+        }
+
+        document.getElementById('insightDetailBody').innerHTML = body;
+
+        // Re-bind booking button
+        insightModal.querySelectorAll('[data-open-modal]').forEach(btn => {
+          btn.addEventListener('click', () => { closeInsight(); setTimeout(openBooking, 200); });
+        });
+
+        insightOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        insightModal.scrollTop = 0;
+        setTimeout(() => insightClose.focus(), 350);
+        return;
+      }
+    }
+
+    // 2) Fallback to built-in static insight content (INSIGHTS object)
     const data = INSIGHTS[id];
     if (!data) return;
     document.getElementById('insightDetailLabel').textContent = data.label;
@@ -4319,12 +4846,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     setTimeout(() => insightClose.focus(), 350);
   }
 
+
   function closeInsight() {
     insightOverlay.classList.remove('open');
     document.body.style.overflow = '';
   }
 
-  insightClose.addEventListener('click', closeInsight);
+  
+  // Expose for CMS-rendered cards / external scripts
+  window.openInsight = openInsight;
+  window.closeInsight = closeInsight;
+
+  function openBlog(slug) {
+    if (!Array.isArray(window._cmsBlogPosts) || !window._cmsBlogPosts.length) return;
+    var key = String(slug || '');
+    var row = window._cmsBlogPosts.find(function(r){ return String(r.slug||'') === key || String(r.id||'') === key; });
+    if (!row) return;
+
+    document.getElementById('insightDetailLabel').textContent = (row.category || 'Blog');
+    var title = String(row.title || 'Blog Post');
+    var excerpt = String(row.excerpt || '');
+    var meta = [row.date, row.reading_time, row.author].filter(Boolean).join(' • ');
+
+    var body = '';
+    body += '<h2 style="margin:0 0 12px; font-size:clamp(26px,3vw,34px); line-height:1.15;">' + escapeHtml(title) + '</h2>';
+    if (meta) body += '<div style="color:var(--white-dim); font-size:14px; margin:0 0 14px;">' + escapeHtml(meta) + '</div>';
+    if (excerpt) body += '<p style="color:var(--white-dim); margin:0 0 18px;">' + escapeHtml(excerpt) + '</p>';
+
+    var full = String(row.content || row.full_content || '').trim();
+    if (full) {
+      var paras = full.split(/\n{2,}/).map(function(p){return p.trim();}).filter(Boolean);
+      body += paras.map(function(p){ return '<p>' + escapeHtml(p).replace(/\n/g,'<br>') + '</p>'; }).join('');
+    } else {
+      body += '<p style="color:var(--white-dim);">Add <strong>content</strong> in your <strong>blog_posts</strong> sheet to show the full post here.</p>';
+    }
+
+    document.getElementById('insightDetailBody').innerHTML = body;
+
+    insightModal.querySelectorAll('[data-open-modal]').forEach(btn => {
+      btn.addEventListener('click', () => { closeInsight(); setTimeout(openBooking, 200); });
+    });
+
+    insightOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    insightModal.scrollTop = 0;
+    setTimeout(() => insightClose.focus(), 350);
+  }
+
+  window.openBlog = openBlog;
+
+insightClose.addEventListener('click', closeInsight);
   insightOverlay.addEventListener('click', e => { if (e.target === insightOverlay) closeInsight(); });
 
   // Bind insight cards
@@ -4369,9 +4940,444 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (bookingOverlay) {
       bookingOverlay.classList.add('open');
       document.body.style.overflow = 'hidden';
+      // Focus first focusable element after transition
+      setTimeout(() => {
+        const first = bookingOverlay.querySelector('input, select, button, textarea');
+        if (first) first.focus();
+      }, 350);
     }
   }
 
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEO ADDITIONAL ASSETS
+     ───────────────────────────────────────────────────────────────
+     sitemap.xml  → Create at /sitemap.xml (template in sitemap.xml file)
+     robots.txt   → Create at /robots.txt  (template in robots.txt file)
+     og-image.jpg → Create 1200×630px branded image at /og-image.jpg
+     logo.png     → Create 400×100px transparent logo at /logo.png
+     apple-touch-icon.png → Create 180×180px icon at /apple-touch-icon.png
+     site.webmanifest     → Create at /site.webmanifest
+
+     INTERNAL LINK OPPORTUNITIES (when you add more pages):
+     ─────────────────────────────────────────────────────────────
+     /services/revenue-strategy    → link from "Revenue Strategy" in services section
+     /services/demand-generation   → link from "Demand Generation" pillar
+     /services/crm-automation      → link from "CRM & Automation" pillar
+     /case-studies/meridian        → link from Meridian case study card
+     /case-studies/volta           → link from Volta case study card
+     /case-studies/africare        → link from AfriCare case study card
+     /insights/                    → link from "All Insights" button
+     /about                        → link from footer "About" link
+═══════════════════════════════════════════════════════════════ -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     GOOGLE SHEETS CMS  — 5 SHEETS
+     ─────────────────────────────────────────────────────────────
+     SETUP (one-time, ~5 minutes):
+
+     1. Go to sheets.google.com → New Spreadsheet
+     2. Rename 5 tabs (bottom) to exactly:
+            case_studies   insights   testimonials   blog_posts   careers
+     3. Row 1 of each sheet = column headers (copy from SCHEMAS below)
+     4. Fill in content rows. Set "published" column to TRUE to go live.
+     5. Share → "Anyone with the link" → Viewer
+     6. Copy your Spreadsheet ID from the URL:
+            https://docs.google.com/spreadsheets/d/COPY_THIS/edit
+     7. Paste it as SHEETS_ID below → redeploy once. Done.
+
+     EDITING CONTENT: Just update the sheet. Live within ~30 seconds.
+     No code changes. No deployments. No dashboards.
+═══════════════════════════════════════════════════════════════ -->
+<script>
+(function() {
+  'use strict';
+
+  /* ── ① CONFIG: paste your Google Spreadsheet ID here ── */
+  var SHEETS_ID = 'YOUR_SPREADSHEET_ID_HERE';
+
+    /* ── ② GOOGLE SHEETS COLUMN HEADERS ────────────────────────────
+     Copy these EXACT headers into Row 1 of each Google Sheet tab.
+     Headers are case-sensitive. Extra columns are allowed.
+
+     TAB: blog_posts
+       id | slug | title | date | category | excerpt | content |
+       cover_image | author | reading_time | tags | published |
+       seo_title | seo_description
+
+     TAB: insights
+       id | title | tag | excerpt | link | date | published
+       (Optional: add slug, full_content/content, label)
+
+     TAB: case_studies
+       id | slug | client | industry | challenge | strategy | execution |
+       results_1 | results_2 | results_3 | timeline | services_used | published
+
+     TAB: testimonials
+       id | name | role | company | quote | rating | date | published
+       (Optional: featured=TRUE for one highlighted testimonial)
+
+     TAB: careers
+       id | title | department | type | location | excerpt | apply_url | published
+  ─────────────────────────────────────────────────────────────── */
+
+  /* ── ③ CORE UTILITIES ─────────────────────────────────── */
+  function sheetUrl(name) {
+    return 'https://docs.google.com/spreadsheets/d/' + SHEETS_ID +
+           '/gviz/tq?tqx=out:json&sheet=' + encodeURIComponent(name);
+  }
+
+  function parseSheet(raw) {
+    var cleaned = raw.replace(/^[\s\S]*?google\.visualization\.Query\.setResponse\(/, '').replace(/\);\s*$/, '');
+    var data = JSON.parse(cleaned);
+    var cols = data.table.cols.map(function(c) { return c.label.trim(); });
+    var rows = (data.table.rows || []).map(function(row) {
+      var obj = {};
+      row.c.forEach(function(cell, i) {
+        obj[cols[i]] = (cell && cell.v != null) ? String(cell.v) : '';
+      });
+      return obj;
+    });
+    return rows.filter(function(r) { return (r.published || '').toUpperCase() === 'TRUE'; });
+  }
+
+  function fetchSheet(name) {
+    return fetch(sheetUrl(name))
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      })
+      .then(parseSheet)
+      .catch(function(e) {
+        console.warn('[CMS] Sheet "' + name + '" failed:', e.message);
+        return null;
+      });
+  }
+
+  function esc(s) {
+    return String(s || '')
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function initials(name) {
+    return (name||'').split(' ').map(function(w){return w[0]||'';}).join('').slice(0,2).toUpperCase();
+  }
+  function slugify(s) {
+    return String(s || '')
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+  }
+  function reReveal() {
+    if (window._revealObserver) {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(function(el) {
+        window._revealObserver.observe(el);
+      });
+    } else {
+      setTimeout(function() {
+        document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('visible'); });
+      }, 150);
+    }
+  }
+
+  /* ── ④ RENDERERS ──────────────────────────────────────── */
+
+  function renderCases(rows) {
+    var el = document.getElementById('casesGrid');
+    if (!el) return;
+    if (!rows || !rows.length) {
+      el.innerHTML = '<div class="cms-empty">No case studies published yet.<br>Add rows to the <strong>case_studies</strong> sheet with <em>published = TRUE</em>.</div>';
+      return;
+    }
+    el.innerHTML = rows.map(function(r, i) {
+      return '<div class="case-card reveal' + (i ? ' reveal-delay-' + i : '') + '">' +
+        '<div class="case-header">' +
+          '<div class="case-header-left">' +
+            '<div class="case-industry">' + esc(r.industry) + '</div>' +
+            '<div class="case-client">' + esc(r.client) + '</div>' +
+          '</div>' +
+          '<div class="case-results-strip">' +
+            '<div class="case-result"><div class="case-result-num">' + esc(r.metric1_num) + '</div><div class="case-result-label">' + esc(r.metric1_label) + '</div></div>' +
+            '<div class="case-result"><div class="case-result-num">' + esc(r.metric2_num) + '</div><div class="case-result-label">' + esc(r.metric2_label) + '</div></div>' +
+            '<div class="case-result"><div class="case-result-num">' + esc(r.metric3_num) + '</div><div class="case-result-label">' + esc(r.metric3_label) + '</div></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="case-body">' +
+          '<div class="case-col"><div class="case-col-title">The Challenge</div><p>' + esc(r.challenge) + '</p></div>' +
+          '<div class="case-col"><div class="case-col-title">Our Strategy</div><p>' + esc(r.strategy) + '</p></div>' +
+          '<div class="case-col"><div class="case-col-title">The Results</div><p>' + esc(r.results) + '</p></div>' +
+        '</div>' +
+        '<div class="case-card-cta" data-case="' + esc(r.slug) + '" role="button" tabindex="0" aria-label="Read ' + esc(r.client) + ' case study">' +
+          '<span class="case-card-cta-text">Read Full Case Study</span>' +
+          '<span class="case-card-cta-arrow">\u2192</span>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+    reReveal();
+    el.querySelectorAll('.case-card-cta').forEach(function(btn) {
+      btn.addEventListener('click', function() { if (typeof openCase === 'function') openCase(btn.dataset.case); });
+      btn.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') btn.click(); });
+    });
+  }
+
+  function renderInsights(rows) {
+    var el = document.getElementById('insightsGrid');
+    if (!el) return;
+    if (!rows || !rows.length) {
+      el.innerHTML = '<div class="cms-empty">No insights published yet.<br>Add rows to the <strong>insights</strong> sheet.</div>';
+      return;
+    }
+    window._cmsInsights = rows;
+    el.innerHTML = rows.map(function(r, i) {
+      return '<div class="insight-card reveal' + (i ? ' reveal-delay-' + i : '') + '" data-insight="' + esc(r.slug) + '" role="button" tabindex="0" aria-label="Read: ' + esc(r.title) + '">' +
+        '<div class="insight-image"><div class="insight-image-label">' + esc(r.label || 'Article') + '</div></div>' +
+        '<div class="insight-body">' +
+          '<div class="insight-tag">' + esc(r.tag) + '</div>' +
+          '<h3 class="insight-title">' + esc(r.title) + '</h3>' +
+          '<p class="insight-excerpt">' + esc(r.excerpt) + '</p>' +
+          '<div class="insight-read">Read ' + esc(r.label || 'Article') + ' <span>\u2192</span></div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+    reReveal();
+    el.querySelectorAll('.insight-card').forEach(function(card) {
+      card.addEventListener('click', function() { if (typeof openInsight === 'function') openInsight(card.dataset.insight); });
+      card.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') card.click(); });
+    });
+  }
+
+  function renderTestimonials(rows) {
+    var el = document.getElementById('testiGrid');
+    if (!el || !rows || !rows.length) {
+      if (el) el.innerHTML = '<div class="cms-empty">No testimonials published yet.</div>';
+      return;
+    }
+    var featured = null;
+    rows.forEach(function(r) { if (!featured && (r.featured||'').toUpperCase()==='TRUE') featured = r; });
+    if (!featured) featured = rows[0];
+    var rest = rows.filter(function(r) { return r !== featured; });
+    el.innerHTML =
+      '<div class="testi-featured reveal">' +
+        '<div class="testi-quote-mark">"</div>' +
+        '<p class="testi-text">' + esc(featured.quote) + '</p>' +
+        '<div class="testi-attr">' +
+          '<div class="testi-avatar">' + esc(featured.initials || initials(featured.name)) + '</div>' +
+          '<div><div class="testi-name">' + esc(featured.name) + '</div>' +
+          '<div class="testi-role">' + esc(featured.role) + '</div></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="testi-stack">' +
+        rest.map(function(r, i) {
+          return '<div class="testi-card reveal reveal-delay-' + (i+1) + '">' +
+            '<p class="testi-card-text">"' + esc(r.quote) + '"</p>' +
+            '<div class="testi-card-attr">' +
+              '<div class="testi-card-name">' + esc(r.name) + '</div>' +
+              '<div class="testi-card-role">' + esc(r.role) + '</div>' +
+            '</div></div>';
+        }).join('') +
+      '</div>';
+    reReveal();
+  }
+
+  function renderBlogPosts(rows) {
+    /* Blog posts render into #insightsGrid as additional cards if the
+       section is shared, OR into a dedicated #blogGrid if it exists.
+       Currently wired to window._cmsBlogPosts for future blog page use. */
+    window._cmsBlogPosts = rows;
+    var el = document.getElementById('blogGrid');
+    if (!el || !rows || !rows.length) return;
+    el.innerHTML = rows.map(function(r, i) {
+      return '<div class="insight-card reveal' + (i ? ' reveal-delay-' + i : '') + '" data-blog-url="' + esc(r.url || r.link || r.href || '') + '" role="link" tabindex="0">' +
+        '<div class="insight-image"><div class="insight-image-label">' + esc(r.category || 'Post') + '</div></div>' +
+        '<div class="insight-body">' +
+          '<div class="insight-tag">' + esc(r.category) + '</div>' +
+          '<h3 class="insight-title">' + esc(r.title) + '</h3>' +
+          '<p class="insight-excerpt">' + esc(r.excerpt) + '</p>' +
+          '<div class="insight-read">' + esc(r.date || '') + ' &nbsp;&middot;&nbsp; ' + esc(r.read_time || '') + '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+    reReveal();
+    // Make blog cards open their URL (if provided)
+    el.querySelectorAll('.insight-card[data-blog-url]').forEach(function(card) {
+      var url = card.getAttribute('data-blog-url');
+      if (!url) return;
+      card.addEventListener('click', function() { window.open(url, '_blank', 'noopener'); });
+      card.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } });
+    });
+  }
+
+  function renderCareers(rows) {
+    var el = document.getElementById('careersGrid');
+    if (!el) return;
+    if (!rows || !rows.length) {
+      el.innerHTML =
+        '<div class="careers-empty">' +
+          '<h3>No open positions right now.</h3>' +
+          '<p>We\'re always interested in exceptional people. Send your CV and a short note on what you\'d bring to the team.</p>' +
+          '<a href="mailto:hello@apexgrowth.africa?subject=Let%27s%20Talk" class="btn-primary" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none">Get in Touch \u2192</a>' +
+        '</div>';
+      return;
+    }
+    el.innerHTML = rows.map(function(r, i) {
+      var applyHref = esc(r.apply_url || 'mailto:careers@apexgrowth.africa');
+      var isExternal = (r.apply_url || '').startsWith('http');
+      return '<div class="job-card reveal' + (i ? ' reveal-delay-' + Math.min(i,3) : '') + '">' +
+        '<div class="job-left">' +
+          '<div class="job-meta">' +
+            '<span class="job-dept">' + esc(r.department) + '</span>' +
+            (r.type ? '<span class="job-type">' + esc(r.type) + '</span>' : '') +
+            (r.location ? '<span class="job-location">\u00b7 ' + esc(r.location) + '</span>' : '') +
+          '</div>' +
+          '<div class="job-title">' + esc(r.title) + '</div>' +
+          (r.excerpt ? '<div class="job-excerpt">' + esc(r.excerpt) + '</div>' : '') +
+        '</div>' +
+        '<a href="' + applyHref + '" class="job-cta"' + (isExternal ? ' target="_blank" rel="noopener"' : '') + ' aria-label="Apply for ' + esc(r.title) + '">' +
+          'Apply Now <span class="job-cta-arrow">\u2192</span>' +
+        '</a>' +
+      '</div>';
+    }).join('');
+    reReveal();
+  }
+
+  /* ── ⑤ FALLBACK STATIC CONTENT ───────────────────────────
+     Shown while Sheet ID is not yet configured.
+     Preserves the original hardcoded content exactly.       */
+  function useFallback() {
+    renderCases([
+      {client:'Meridian Payment Solutions',industry:'Fintech \u00b7 Series B \u00b7 West Africa',metric1_num:'312%',metric1_label:'Pipeline Growth',metric2_num:'$2.4M',metric2_label:'Revenue Attributed',metric3_num:'7.2\u00d7',metric3_label:'ROAS',challenge:'Meridian had a strong product and growing user base but no structured demand generation function. Their B2B acquisition relied entirely on founder relationships, creating a ceiling on growth.',strategy:'We rebuilt their go-to-market from the ground up \u2014 an ABM programme targeting enterprise payroll and treasury teams, a LinkedIn demand engine, and a HubSpot implementation with full pipeline visibility.',results:'Within 6 months, qualified pipeline grew 312%. Monthly SQLs went from 8 to 43. Cost per opportunity fell 58%. The sales team had their highest-revenue quarter ever.',slug:'meridian',published:'TRUE'},
+      {client:'Volta Prime Developments',industry:'Real Estate \u00b7 Ghana & C\u00f4te d\u2019Ivoire',metric1_num:'189%',metric1_label:'Leads Increase',metric2_num:'41%',metric2_label:'Cost Per Lead Reduction',metric3_num:'GHS 18M',metric3_label:'Attributed Sales',challenge:'Volta had multiple premium residential projects launching simultaneously but relied entirely on estate agents and word-of-mouth.',strategy:'We built a diaspora-first digital strategy with premium Meta and Google campaigns targeting Ghanaian nationals abroad, plus automated WhatsApp nurture and a CRM with real-time lead scoring.',results:'Qualified buyer inquiries grew 189% in four months. Cost per lead fell from GHS 780 to GHS 460. Two of three project phases were 70% reserved before physical launch events.',slug:'volta',published:'TRUE'},
+      {client:'AfriCare Medical Group',industry:'Private Healthcare \u00b7 8 Clinics \u00b7 East & West Africa',metric1_num:'94%',metric1_label:'Patient Booking Increase',metric2_num:'4.1\u00d7',metric2_label:'Marketing ROI',metric3_num:'6 Wks',metric3_label:'Time to First Results',challenge:'AfriCare operated 8 clinics with no group-level marketing strategy, no central CRM, and no attribution.',strategy:'We deployed a group-wide revenue architecture: centralised HubSpot synced to their booking system, hyper-local campaigns per clinic, and a reputation management system.',results:'Patient bookings grew 94% across the group. New clinic break-even reduced from 12 months to 4. Marketing ROI reached 4.1\u00d7.',slug:'africare',published:'TRUE'},
+    ]);
+    renderInsights([
+      {title:'The Revenue Architecture Playbook: Why African B2B Companies Keep Losing Pipeline at the Same Three Points',tag:'Revenue Operations',label:'Framework',slug:'pipeline',excerpt:'Most B2B organisations in Africa have the same structural problem: marketing, sales, and customer success operate in silos. This piece breaks down the three pipeline failure points and the systems architecture that fixes them permanently.',published:'TRUE'},
+      {title:'How Fintech Brands Win Enterprise Clients in Africa Without Cold Calling',tag:'Fintech Marketing',label:'Analysis',slug:'fintech',excerpt:"Enterprise B2B acquisition in African fintech requires a fundamentally different playbook than what works in mature markets. Here's the data behind what actually converts.",published:'TRUE'},
+      {title:'The 2025 Ghana B2B Marketing Benchmark Report',tag:'Market Research',label:'Report',slug:'benchmark',excerpt:'We surveyed 140 B2B marketing leaders across Ghana, Nigeria, and Kenya. The findings reveal a significant gap between where budgets are allocated and where pipeline actually comes from.',published:'TRUE'},
+    ]);
+    renderTestimonials([
+      {quote:"Before Apex Growth, our marketing team was producing content and running campaigns, but I had no idea whether any of it was driving revenue. Six months in, I have a real-time dashboard, a qualified pipeline that's grown by 4\u00d7 and, for the first time, a marketing team I can confidently report to my board as a revenue function.",name:'Adaeze Kofi-Mensah',role:'CEO \u00b7 Meridian Payment Solutions',initials:'AK',featured:'TRUE',published:'TRUE'},
+      {quote:"They came in, understood our commercial model in the first week, and built a system I wish we'd had four years ago. Our sales team went from chasing leads to managing inbound pipeline.",name:'Emmanuel Osei-Bonsu',role:'Commercial Director \u00b7 Volta Prime Developments',initials:'EO',featured:'FALSE',published:'TRUE'},
+      {quote:'The ROI clarity alone was worth the engagement. But what actually changed our business was the automation infrastructure. We can now onboard 3\u00d7 the patients with the same team.',name:'Dr. Ngozi Amaechi',role:'Group CMO \u00b7 AfriCare Medical Group',initials:'NA',featured:'FALSE',published:'TRUE'},
+      {quote:"What I respect most is that they push back when they disagree. Apex Growth tells you what your numbers actually say. That's rare.",name:'Kwabena Asante',role:'Founder & CEO \u00b7 TechBridge Nigeria',initials:'KA',featured:'FALSE',published:'TRUE'},
+    ]);
+    renderCareers([]); /* shows "no open positions" state */
+  }
+
+  /* ── ⑥ SETUP NOTICE ─────────────────────────────────────── */
+  function showSetupNotice() {
+    var b = document.createElement('div');
+    b.id = 'cmsSetupBanner';
+    b.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#B07820;color:#1C1712;font-family:monospace;font-size:11px;letter-spacing:.08em;padding:14px 20px;z-index:9000;max-width:300px;line-height:1.7;box-shadow:0 4px 20px rgba(0,0,0,.15)';
+    b.innerHTML = '<strong>CMS: SHEET NOT CONNECTED</strong><br>Find <code>SHEETS_ID</code> in index.html<br>and paste your Google Spreadsheet ID.<br><a href="https://docs.google.com/spreadsheets" target="_blank" style="color:inherit;font-weight:700">Create your sheet \u2192</a>';
+    document.body.appendChild(b);
+    setTimeout(function() {
+      b.style.transition = 'opacity .5s';
+      b.style.opacity = '0';
+      setTimeout(function() { b.remove(); }, 500);
+    }, 12000);
+  }
+
+  /* ── ⑦ INIT: load all 5 sheets in parallel on page load ── */
+  function init() {
+    if (!SHEETS_ID || SHEETS_ID === 'YOUR_SPREADSHEET_ID_HERE') {
+      useFallback();
+      showSetupNotice();
+      return;
+    }
+    Promise.all([
+      fetchSheet('case_studies'),
+      fetchSheet('insights'),
+      fetchSheet('testimonials'),
+      fetchSheet('blog_posts'),
+      fetchSheet('careers'),
+    ]).then(function(results) {
+      var cases        = results[0];
+      var insights     = results[1];
+      var testimonials = results[2];
+      var blogPosts    = results[3];
+      var careers      = results[4];
+
+      /* If ALL sheets fail, something is wrong with the Sheet ID / sharing */
+      if ([cases, insights, testimonials, blogPosts, careers].every(function(r){ return r === null; })) {
+        console.error('[CMS] All sheets failed. Check SHEETS_ID and sharing settings.');
+        useFallback();
+        showSetupNotice();
+        return;
+      }
+
+      if (cases        !== null) renderCases(cases);
+      if (insights     !== null) renderInsights(insights);
+      if (testimonials !== null) renderTestimonials(testimonials);
+              if (blogPosts    !== null) renderBlogPosts(blogPosts);
+      if (careers      !== null) renderCareers(careers);
+
+      /* Partial failures — show empty state for that section */
+      if (cases        === null) renderCases([]);
+      if (insights     === null) renderInsights([]);
+      if (testimonials === null) renderTestimonials([]);
+      if (careers      === null) renderCareers([]);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEO ADDITIONAL ASSETS
+     ───────────────────────────────────────────────────────────────
+     sitemap.xml  → Create at /sitemap.xml
+     robots.txt   → Create at /robots.txt
+     og-image.jpg → Create 1200×630px branded image at /og-image.jpg
+     apple-touch-icon.png → Create 180×180px icon at /apple-touch-icon.png
+═══════════════════════════════════════════════════════════════ -->
+
+<script>
+(function(){
+  var html = document.documentElement;
+  var btn  = document.getElementById('themeToggle');
+  var stored = localStorage.getItem('apex-theme');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var dark = stored ? stored === 'dark' : prefersDark;
+
+  function applyTheme(isDark){
+    if(isDark){ html.setAttribute('data-theme','dark'); }
+    else { html.removeAttribute('data-theme'); }
+    var mc = document.querySelector('meta[name="theme-color"]');
+    if(mc) mc.setAttribute('content', isDark ? '#08090A' : '#F5F0E8');
+    if(btn){
+      btn.textContent = isDark ? '☀' : '☾';
+      btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+  }
+
+  applyTheme(dark);
+
+  if(btn){
+    btn.addEventListener('click', function(){
+      dark = html.getAttribute('data-theme') !== 'dark';
+      localStorage.setItem('apex-theme', dark ? 'dark' : 'light');
+      applyTheme(dark);
+    });
+  }
+
+  // Sync if OS preference changes while page is open
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e){
+    if(!localStorage.getItem('apex-theme')){
+      dark = e.matches;
+      applyTheme(dark);
+    }
+  });
 })();
 </script>
 
