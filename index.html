@@ -433,16 +433,17 @@
 
   .hero-headline {
     font-family: var(--serif);
-    font-size: clamp(52px, 7vw, 96px);
+    font-size: clamp(64px, 10vw, 128px);
     font-weight: 600;
-    line-height: 1.0;
-    letter-spacing: -0.02em;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
     margin-bottom: 32px;
     animation: fadeUp 1s ease 0.3s both;
   }
   .hero-headline em {
     font-style: italic;
     color: var(--gold);
+    text-shadow: 0 0 80px rgba(176,120,32,0.18);
   }
 
   .hero-sub {
@@ -578,12 +579,20 @@
      METRICS BAR
   ═══════════════════════════════════════════ */
   .metrics-bar {
-    background: var(--panel);
-    border-top: 1px solid var(--border);
+    background: var(--ink);
+    border-top: 3px solid var(--gold);
     border-bottom: 1px solid var(--border);
-    padding: 48px var(--pad);
+    padding: clamp(48px, 8vw, 96px) var(--pad);
     position: relative;
     z-index: 2;
+    overflow: hidden;
+  }
+  .metrics-bar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(176,120,32,0.05) 0%, transparent 70%);
+    pointer-events: none;
   }
   .metrics-inner {
     max-width: var(--max);
@@ -593,7 +602,7 @@
     gap: 0;
   }
   .metric-item {
-    padding: 0 40px;
+    padding: 0 clamp(20px, 3vw, 48px);
     border-right: 1px solid var(--border);
   }
   .metric-item:first-child { padding-left: 0; }
@@ -601,21 +610,23 @@
 
   .metric-num {
     font-family: var(--serif);
-    font-size: clamp(40px, 4vw, 64px);
+    font-size: clamp(56px, 7vw, 96px);
     font-weight: 600;
     color: var(--white);
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
   }
   .metric-num span { color: var(--gold); }
   .metric-desc {
     font-size: 13px;
     color: var(--white-dim);
     line-height: 1.5;
+    max-width: 180px;
   }
 
   @media(max-width: 768px) {
-    .metrics-inner { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    .metrics-inner { grid-template-columns: repeat(2, 1fr); gap: clamp(32px, 5vw, 64px) 0; }
     .metric-item { border-right: none; padding: 0; }
     .metric-item:nth-child(odd) { border-right: 1px solid var(--border); padding-right: 24px; }
   }
@@ -779,15 +790,18 @@
     gap: 2px;
   }
   .diff-card {
-    background: var(--surface);
-    box-shadow: 0 1px 8px rgba(26,21,16,0.04);
+    background: rgba(255,255,255,0.04);
+    box-shadow: 0 4px 20px rgba(26,21,16,0.05);
     padding: 48px 40px;
     border: 1px solid var(--border);
     position: relative;
     overflow: hidden;
-    transition: border-color 0.3s, transform 0.3s;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
     cursor: default;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
+  [data-theme="dark"] .diff-card { background: rgba(255,255,255,0.02); }
   .diff-card::before {
     content: '';
     position: absolute;
@@ -885,17 +899,18 @@
 
   .pillar-number {
     font-family: var(--serif);
-    font-size: 120px;
-    font-weight: 600;
-    color: rgba(176,120,32,0.08);
+    font-size: clamp(100px, 12vw, 160px);
+    font-weight: 700;
+    color: rgba(176,120,32,0.07);
     line-height: 1;
     position: absolute;
-    top: -10px;
-    right: 20px;
+    top: -16px;
+    right: 16px;
     pointer-events: none;
-    transition: color 0.3s;
+    transition: color 0.4s;
+    letter-spacing: -0.04em;
   }
-  .pillar:hover .pillar-number { color: rgba(176,120,32,0.12); }
+  .pillar:hover .pillar-number { color: rgba(176,120,32,0.14); }
 
   .pillar-content { padding: 48px 40px; flex: 1; }
 
@@ -997,9 +1012,28 @@
     border: 1px solid var(--border);
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(26,21,16,0.06);
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
   }
-  .case-card:hover { border-color: var(--gold); box-shadow: 0 8px 32px rgba(26,21,16,0.10); }
+  .case-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--case-accent, var(--gold));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .case-card:hover::before { transform: scaleX(1); }
+  .case-card:hover { border-color: var(--case-accent, var(--gold)); box-shadow: 0 8px 40px rgba(26,21,16,0.12); transform: translateY(-2px); }
+  .case-card .case-result-num { color: var(--case-accent, var(--gold)); }
+  /* Accent colours per industry — Clay/Huge style */
+  .case-card[data-accent="teal"]   { --case-accent: #0D7377; }
+  .case-card[data-accent="earth"]  { --case-accent: #A07830; }
+  .case-card[data-accent="green"]  { --case-accent: #2D6A4F; }
+  .case-card[data-accent="blue"]   { --case-accent: #1D4E89; }
+  .case-card[data-accent="purple"] { --case-accent: #5C4B8A; }
 
   .case-header {
     padding: 32px 48px;
@@ -1141,19 +1175,33 @@
   .step:last-child { padding-right: 0; }
 
   .step-num {
-    width: 56px; height: 56px;
+    width: 64px; height: 64px;
     border: 1px solid var(--gold);
     background: var(--panel);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--mono);
-    font-size: 12px;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 600;
     color: var(--gold);
-    letter-spacing: 0.1em;
+    letter-spacing: -0.02em;
     margin-bottom: 32px;
     position: relative;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
+  }
+  .step-num::after {
+    content: attr(data-num);
+    position: absolute;
+    font-size: clamp(72px, 9vw, 120px);
+    font-weight: 700;
+    color: rgba(176,120,32,0.05);
+    bottom: -16px;
+    left: -8px;
+    line-height: 1;
+    pointer-events: none;
+    letter-spacing: -0.04em;
+    z-index: -1;
   }
   .step:hover .step-num {
     background: var(--gold);
@@ -1225,9 +1273,11 @@
   }
 
   .testi-featured {
-    background: linear-gradient(135deg, var(--ink) 0%, rgba(176,120,32,0.06) 100%);
+    background: linear-gradient(135deg, rgba(176,120,32,0.05) 0%, rgba(176,120,32,0.02) 100%);
     border: 1px solid var(--gold);
     padding: 56px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
   .testi-quote-mark {
     font-family: var(--serif);
@@ -1285,13 +1335,16 @@
     gap: 24px;
   }
   .testi-card {
-    background: var(--surface);
+    background: rgba(255,255,255,0.04);
     border: 1px solid var(--border);
     padding: 32px;
-    box-shadow: 0 1px 8px rgba(26,21,16,0.04);
-    transition: border-color 0.3s;
+    box-shadow: 0 4px 24px rgba(26,21,16,0.06);
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
-  .testi-card:hover { border-color: var(--gold); }
+  .testi-card:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(26,21,16,0.10); }
+  [data-theme="dark"] .testi-card { background: rgba(255,255,255,0.03); }
   .testi-card-text {
     font-family: var(--serif);
     font-size: 16px;
@@ -3286,7 +3339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="services-pillars container">
     <div class="pillar reveal">
-      <div class="pillar-number">I</div>
+      <div class="pillar-number" aria-hidden="true">01</div>
       <div class="pillar-content">
         <div class="pillar-tag">Pillar One</div>
         <h3 class="pillar-title">Revenue Strategy & Market Positioning</h3>
@@ -3305,7 +3358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="pillar reveal reveal-delay-1">
-      <div class="pillar-number">II</div>
+      <div class="pillar-number" aria-hidden="true">02</div>
       <div class="pillar-content">
         <div class="pillar-tag">Pillar Two</div>
         <h3 class="pillar-title">Demand Generation & Performance Marketing</h3>
@@ -3324,7 +3377,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="pillar reveal reveal-delay-2">
-      <div class="pillar-number">III</div>
+      <div class="pillar-number" aria-hidden="true">03</div>
       <div class="pillar-content">
         <div class="pillar-tag">Pillar Three</div>
         <h3 class="pillar-title">Automation, CRM & Sales Enablement</h3>
@@ -3376,25 +3429,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="process-steps container">
     <div class="step reveal">
-      <div class="step-num">01</div>
+      <div class="step-num" data-num="01">01</div>
       <h3 class="step-title">Revenue Audit</h3>
       <p class="step-desc">We begin with a forensic audit of your commercial operation: marketing spend, attribution data, CRM health, funnel conversion rates, and competitive positioning. We find what's broken, what's hidden, and what's possible.</p>
       <div class="step-deliverable">Deliverable: Revenue Diagnostic Report</div>
     </div>
     <div class="step reveal reveal-delay-1">
-      <div class="step-num">02</div>
+      <div class="step-num" data-num="02">02</div>
       <h3 class="step-title">Strategic Blueprint</h3>
       <p class="step-desc">We build your custom growth architecture: go-to-market strategy, channel mix, messaging hierarchy, technology stack, and 12-month revenue model. This becomes your commercial playbook.</p>
       <div class="step-deliverable">Deliverable: Growth Architecture Document</div>
     </div>
     <div class="step reveal reveal-delay-2">
-      <div class="step-num">03</div>
+      <div class="step-num" data-num="03">03</div>
       <h3 class="step-title">Implementation</h3>
       <p class="step-desc">We execute with precision and speed. Campaigns launch. Systems are built. CRM goes live. Automation sequences activate. Content deploys. Within 30 days, your revenue engine is running.</p>
       <div class="step-deliverable">Deliverable: Live Revenue System</div>
     </div>
     <div class="step reveal reveal-delay-3">
-      <div class="step-num">04</div>
+      <div class="step-num" data-num="04">04</div>
       <h3 class="step-title">Optimisation & Scale</h3>
       <p class="step-desc">We run weekly performance reviews, quarterly strategy audits, and continuous optimisation cycles. What works gets scaled. What underperforms gets rebuilt. Compounding growth is the only acceptable outcome.</p>
       <div class="step-deliverable">Deliverable: Monthly Revenue Intelligence Report</div>
@@ -5094,8 +5147,15 @@ insightClose.addEventListener('click', closeInsight);
       el.innerHTML = '<div class="cms-empty">No case studies published yet.<br>Add rows to the <strong>case_studies</strong> sheet with <em>published = TRUE</em>.</div>';
       return;
     }
+    var ACCENT_MAP = {fintech:'teal',real:'earth',health:'green',medic:'green',care:'green',estate:'earth',tech:'blue',finance:'purple'};
+    function accentFor(industry){
+      var ind = (industry||'').toLowerCase();
+      for(var k in ACCENT_MAP){ if(ind.indexOf(k)!==-1) return ACCENT_MAP[k]; }
+      return 'earth';
+    }
     el.innerHTML = rows.map(function(r, i) {
-      return '<div class="case-card reveal' + (i ? ' reveal-delay-' + i : '') + '">' +
+      var accent = accentFor(r.industry || r.client || '');
+      return '<div class="case-card reveal' + (i ? ' reveal-delay-' + i : '') + '" data-accent="' + accent + '">' +
         '<div class="case-header">' +
           '<div class="case-header-left">' +
             '<div class="case-industry">' + esc(r.industry) + '</div>' +
